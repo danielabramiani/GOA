@@ -1,0 +1,126 @@
+header {
+  background-color:  #ffffff;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000000;
+  font-weight: bolder;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+li {
+  margin: 0 15px;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #066c10; 
+}
+#myParagraph{
+    color:  rgb(62, 62, 62);
+    text-align: center;
+    font-weight: bold;
+}
+#para{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+h1{
+    color: white;
+}
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #217af7;
+}
+
+
+button{
+    background-color: green;
+    color: white;
+    border-radius: 6px;
+}
+section{
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fffefe;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+img{
+    border-radius: 20px;
+    width: 50%;
+}
+
+  
+  h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 60px;
+    letter-spacing: 1px;
+    color: #ffffff;
+    font-weight: bold;
+  }
+  #im{
+    width: 100px;
+    height: auto;
+    transition: transform 0.3s;
+   
+  }
+  #im:hover{
+    transform: scale(1.25);
+  }
+  #m{
+    width: 60px;
+    height: auto;
+    transition: transform 0.3s;
+  }
+  #m:hover{
+    transform: scale(1.25);
+  }
+  .container {
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  .text {
+    font-weight: 100;
+    font-size: 28px;
+    color: #fafafa;
+    font-weight: bolder;
+  }
+  .dud {
+    color: #096e18;
+  }

@@ -1,0 +1,108 @@
+header{
+    background-color: #ad0b0b;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 900;
+
+}
+
+.logo {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 900;
+    color: rgb(255, 255, 255);
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+li {
+    margin: 0 15px;
+}
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.3s ease;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+a:hover {
+    color: #085bae; 
+}
+h1{
+    color: #ffffff;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    background-color: #085bae;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.5s ease; 
+}
+section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+p{
+    font-family: 'Arial', sans-serif;
+    font-weight: 300;
+}
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+}
+button {
+    background-color: #06d039;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.film-card {
+    width: 35%;
+    margin-bottom: 20px;
+    background-color: #ffffff; /* Dark background color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+    border-radius: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+img{
+    border-radius: 20px;
+}
+.film-card:hover {
+    transform: scale(1.05);
+}
+
+.film-card img {
+    width: 100%;
+    height: auto;
+}
+
+.film-card .film-info {
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .container {
+    width: 200px;
+    height: 200px;
+    position: relative;
+  }
+
+  .circle {
+    width: 100px;
+    height: 100px;
+    background-color: #55f41b78;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-90%, -50%);
+    opacity: 0.8;
+    animation: float 3.5s infinite ease-in-out alternate;
+  }
+
+  @keyframes float {
+    0% {
+      transform: translate(-90%, -90%) translateY(0);
+    }
+    50% {
+      transform: translate(-70%, -100%) translateY(-10px);
+    }
+    100% {
+      transform: translate(-100%, -80%) translateY(0);
+    }
+  }

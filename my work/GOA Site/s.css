@@ -1,0 +1,116 @@
+body{
+    margin-top: 110px;
+    margin-bottom: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: aliceblue;
+    background-color: black;
+}
+.container{
+    animation: appearUpLow 1s;
+    text-align: center;
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    row-gap: 40px;
+}
+h2{
+    font-size: 32px;
+}
+.courseImg{
+    border-radius: 5px;
+    width: 39vw;
+    height: 39vw;
+    object-fit:contain;
+    border:2px solid rgb(0, 252, 42);
+    box-shadow: 1px 1px 10px 5px hsla(113, 100%, 41%, 0.5);
+    background-color: rgb(48, 193, 72);
+    transition: 0.2s;
+}
+.courseImg:hover{
+    transform: scale(1.000000005) translate(3px,-9px);
+    background-color: rgb(7, 142, 29);
+}
+.courseImg:active{
+    transform: scale(1.1) translate(0px,3px);
+    background-color: rgb(6, 82, 18);
+}
+@media screen and (max-width: 850px){
+    h2{
+        font-size:29px;
+    }
+}
+@media screen and (max-width: 750px){
+    h2{
+        font-size:25px;
+    }
+}
+@media screen and (max-width: 650px){
+    h2{
+        font-size:20px;
+    }
+}
+@media screen and (max-width: 550px){
+    h2{
+        font-size:16px;
+    }
+}
+@media screen and (max-width: 400px){
+    h2{
+        font-size:15px;
+    }
+}
+@media screen and (max-width: 300px){
+    h2{
+        font-size:12px;
+    }
+}
+
+  body{
+    background-color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  h1{
+    color: white;
+  }
+  header {
+    background-color: #051b00; 
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  ul {
+    list-style: none;
+    display: flex;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  li {
+    margin: 0 15px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: #00980f; 
+    background-color: rgb(24, 24, 24);
+  }
+  

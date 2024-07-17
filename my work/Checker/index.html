@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./hi.css">
+    <title>Weight Check</title>
+</head>
+<body>
+    <div id="calculator">
+        <h2>Check Your BMI</h2>
+        <label for="gender">Select Gender:</label>
+        <select id="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select>
+        <br>
+        <label for="weight">Weight (kg):</label>
+        <input type="text" id="weight" placeholder="Enter your weight">
+        <label for="height">Height (cm):</label>
+        <input type="text" id="height" placeholder="Enter your height">
+        <input type="button" value="Calculate" onclick="calculateBMI()">
+        <div id="result"></div>
+    </div>
+
+    <script src="./h.js">
+    </script>
+</body>
+</html>

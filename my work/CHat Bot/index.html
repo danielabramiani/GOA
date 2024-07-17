@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Dani</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <ul>
+                <h2>Basic Commands:</h2>
+                <li><a href="#">Hello</a></li>
+                <li><a href="#">Time</a></li>
+                <li><a href="#">Date</a></li>
+            </ul>
+        </aside>
+        <main class="main-content">
+            <div class="chat-header">
+                Chat Dani
+            </div>
+            <div class="chat-box" id="chat-box">
+            </div>
+            <div class="input-container">
+                <input type="text" id="user-input" placeholder="Type your message...">
+                <button onclick="sendMessage()">Send</button>
+            </div>
+        </main>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="technosite.css">
+    <title>techno dani</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <p class="logo">Techno Dani</p>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#mini">Contact</a></li>
+                <li><a href="#About" id="about">About</a></li>
+            </ul>
+            <div class="search-bar">
+                <input type="text" placeholder="Search">
+            </div>
+        </nav>
+    </header>
+    <h1>Your Ultimate Destination for All Things Tech! 😊</h1>
+    <br>
+    <section id="Adout">
+        <h2>Welcome To Techno Dani</h2>
+
+       <p> <strong>Techno Dani</strong> is your one-stop destination for staying informed, <br>
+        making informed choices, and connecting with a community that shares<br>
+         your passion for all things tech. Join us as we explore the exciting<br>
+          and ever-evolving world of technology together! 🌐💻
+       </p>
+       <p><strong>Ceo Daniel Abramiani</strong></p>
+       <button onclick="changeBackgroundColor()">Change Background Color</button>
+    </section>
+    <br>
+    <center>
+    <div class="film-card">
+        <img id="mini" src="22.jpg" alt="minivan1">
+        <div class="film-info">
+            <h3>Samsung Tv</h3>
+            <p class="toy">Price : 1499 Gel</p>
+            <p><strong>About</strong> : size-43 inch 108cm full Hd smart Tv</p>
+        </div>
+    </div>
+
+    <div class="film-card">
+        <img  id="mini2"   src="71RxCmvnrbL._AC_UF1000,1000_QL80_.jpg">
+        <div class="film-info">
+            <h3>Samsung Wondertaiment</h3>
+            <P>Price : 1199 Gel</P>
+            <p><strong>SIze :</strong> 80cm(32 inch) The Samsung Smart TV lives upto its name. Enjoy HD TV in Digital era.<br>
+                 Once you see high definition of TV with vivid and crisp details, you’ll never ...</p>
+
+        </div>
+    </div>
+    </center>
+
+    <script>
+        function changeBackgroundColor() {
+            var body = document.body;
+
+            var randomColor = '#' + Math.floor(Math.random()*16777215).toString(16);
+
+            body.style.backgroundColor = randomColor;
+        }
+    </script>
+</body>
+</html>

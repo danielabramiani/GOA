@@ -1,0 +1,314 @@
+         body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #141414; /* Dark background color */
+            color: white; /* Default text color */
+        }
+        
+        header {
+            background-color: #ad0f17;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            font-family: 'Verdana', 'Geneva', 'Tahoma', sans-serif;
+            font-weight: 700;
+            font-style: italic;
+        }
+        
+        nav {
+            background-color: #141414;
+        }
+        
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        
+        nav a:hover {
+            background-color: #ad1118;
+            color: rgb(0, 0, 0);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+            transition: transform 0.3s;
+        }
+        
+        .featured-film {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .featured-film img {
+            width: 150px;
+            transition: transform 0.3s;
+        }
+        
+        .featured-film:hover img {
+            transform: scale(1.05);
+        }
+        
+        .film-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        
+        .film-card {
+            width: 25%;
+            margin-bottom: 20px;
+            background-color: #141414; /* Dark background color */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s;
+        }
+        
+        .film-card:hover {
+            transform: scale(1.05);
+        }
+        
+        .film-card img {
+            width: 100%;
+            height: auto;
+        }
+        
+        .film-card .film-info {
+            padding: 10px;
+        }
+        
+        h2 {
+            font-family: 'Netflix Sans', sans-serif; /* You may need to import the Netflix Sans font */
+            font-weight: 700; /* Bold font weight */
+            color: white;
+            font-style: italic;
+        }
+        
+        /* Additional Styles for Dropdown Menu */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #141414; /* Dark background color */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+        
+        .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        
+        .dropdown-content a:hover {
+            background-color: #E50914;
+            color: black; /* Change text color on hover */
+        }
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        footer{
+            background-color: #E50914;
+            font-family: 'Verdana', 'Geneva', 'Tahoma', sans-serif;
+            font-style: italic;
+            font-weight: bold;
+            font-size: large;
+            color: white;
+        }
+        a{
+            color: white;
+        }
+        .i,img{
+            size: 5px;
+        }
+        .n{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            font-family: 'JetBrains Mono', monospace;
+        }
+        .search-bar {
+            display: flex;
+            align-items: center;
+        }
+        
+        input {
+            margin-right: 10px;
+            padding: 8px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        button{
+            font-family: 'Verdana', 'Geneva', 'Tahoma', sans-serif;
+            font-style: italic;
+            background-color: #b60f0f;
+            color: #ffffff;
+            padding: 8px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #121212;
+            min-width: 160px;
+            z-index: 1;
+        }
+        .dropdown-content a {
+            color: #ffffff;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content a:hover {
+            background-color: #000000;
+            color: #800d0d;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        input{
+            color: #ffffff;
+            background-color: #86161b;
+            font-weight: bold;
+        }
+        ::placeholder{
+            color: #ffffff;
+        }
+        .Film-card {
+            width: 25%;
+            margin-bottom: 20px;
+            background-color: #141414; /* Dark background color */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s;
+        }
+        .ani{
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .ani:hover {
+            color: #ad1118;
+            background-color: black;
+        }
+        ul {
+            list-style: none;
+            display: flex;
+            padding: 8px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        li {
+            margin: 0 15px;
+        }
+        
+        a {
+            text-decoration: none;
+            color: #ffffff;
+            transition: color 0.3s ease;
+        }
+        
+        a:hover {
+            color: #890e0e; 
+        }
+        
+        .search-bar {
+            display: flex;
+            align-items: center;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .dropbtn {
+            background-color: #121212;
+            color: #ffffff;
+            padding: 8px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #121212;
+            min-width: 160px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        
+        .dropdown-content a {
+            color: #ffffff;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        
+        .dropdown-content a:hover {
+            color: #000000;
+            background-color: #8a0f0f;
+        }
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .goa {
+            margin-top: 150px;
+            text-align: left;
+            margin-left: 50px;
+            color: rgb(17, 149, 0);
+            font-size: 25px;
+            font-family: 'JetBrains Mono', monospace;
+        }
+        .about {
+            margin-left: 50px;
+            color: white;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 13px;
+        }
+        .list li{
+            color: white;
+            font-family: 'JetBrains Mono', monospace;
+            margin-left: 40px;
+            font-size: 13px;
+            background-color: rgb(5, 41, 0);
+            border-radius: 10px;
+            padding: 10px 10px 10px 10px;
+        }
+        list li,img {
+            width: 150px;
+            transition: 2s ease;
+        }
+        .list img{
+            font-size: medium;
+        }
+    

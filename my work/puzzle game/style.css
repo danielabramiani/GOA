@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #007ab7;
+    height: 50vh;
+}
+
+
+.container {
+    max-width: 90%;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 5px;
+    width: 90%;
+    margin: 50px 0 0;
+    border-radius: 20px;
+    background-color: white;
+  }
+  
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+  
+  
+input[type="text"] {
+    width: 100%; /* Responsive width */
+    max-width: 100%;
+    height: 50px;
+    padding: 12px;
+    margin-right: 20px;
+    font-size: 18px;
+    border-radius: 12px;
+    border: 1.5px solid lightgrey;
+    outline: none;
+    transition: all 1.9s cubic-bezier(0.19, 1, 0.22, 1);
+    box-shadow: 0px 0px 20px -18px;
+    cursor: pointer;
+}
+
+input:hover{
+    background-color: #b8b7b7;
+    color: #fff;
+    box-shadow: 0px 0px 20px -17px;
+}
+  
+button {
+    width: 50%;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 0;
+    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-size: 12px;
+    transition: all 0.5s ease;
+}
+button:hover{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    transition: 0.5s;
+    box-shadow: rgb(26, 167, 4) 0px 17px 29px 0px;
+}
+button:active{
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    border: 1px solid black;
+    box-shadow: black 5px;
+    transform: scale(1.09);
+    transition: 100ms;
+}
+
+#puzzle{
+    font-size: x-large;
+    text-align: center;
+}
+  
+.delete-btn {
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+    color: #000000;
+    display: grid;
+}
+
+
+
+#hard{
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 0;
+    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-size: 12px;
+    transition: all 0.5s ease;
+}
+
+  #hard:hover{
+    background-color: rgb(236, 236, 236);
+    color: white;
+    transition: 0.5s;
+    box-shadow: rgb(167, 148, 4) 0px 17px 29px 0px;
+}
+#hard:active{
+    background-color: #ffffff;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    border: 1px solid black;
+    box-shadow: black 5px;
+    transform: scale(1.09);
+    transition: 100ms;
+}
+
+#easy{
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 0;
+    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-size: 12px;
+    transition: all 0.5s ease;
+}
+
+  #easy:hover{
+    background-color: rgb(236, 236, 236);
+    color: white;
+    transition: 0.5s;
+    box-shadow: rgb(0, 255, 68) 0px 17px 29px 0px;
+}
+#easy:active{
+    background-color: #ffffff;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    border: 1px solid black;
+    box-shadow: black 5px;
+    transform: scale(1.09);
+    transition: 100ms;
+}
+
+#medium{
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 0;
+    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-size: 12px;
+    transition: all 0.5s ease;
+}
+
+  #medium:hover{
+    background-color: rgb(236, 236, 236);
+    color: white;
+    transition: 0.5s;
+    box-shadow: rgb(255, 0, 0) 0px 17px 29px 0px;
+}
+#medium:active{
+    background-color: #ffffff;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    border: 1px solid black;
+    box-shadow: black 5px;
+    transform: scale(1.09);
+    transition: 100ms;
+}
+
+@media only screen and (min-width: 600px) {
+    .container {
+        max-width: 600px;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    input[type="text"] {
+        height: 40px; 
+        font-size: 16px; 
+    }
+    
+    button {
+        font-size: 10px; 
+    }
+}

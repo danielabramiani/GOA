@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #parent{
+            position: relative;
+            display: flex;
+            width: 500px;
+            height: 500px;
+            background-color: rgb(255, 0, 0);
+            gap: 2rem;
+        }
+
+        #child{
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            background-color: rgb(255, 255, 255);
+            font-size: 2rem;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: left 1s; 
+            
+        }
+    </style>
+</head>
+<body>
+
+    <div id="parent">
+        <div id="child">daniel<br>stop</div>
+    </div>
+
+
+    <script src="./script.js"></script>
+</body>
+</html>

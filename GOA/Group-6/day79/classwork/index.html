@@ -1,0 +1,21 @@
+<!-- HTML -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Change Text Content Example</title>
+</head>
+<body>
+  <p id="paragraph">Initial text</p>
+
+  <script>
+    function changeText(id, newText) {
+      let element = document.getElementById(id);
+      if (element) {
+        element.textContent = newText;
+      }
+    }
+  </script>
+</body>
+</html>

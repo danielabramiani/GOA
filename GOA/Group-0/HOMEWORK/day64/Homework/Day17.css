@@ -1,0 +1,51 @@
+label {
+    font-weight: bolder;
+    color: aliceblue;
+}
+form{
+    position: relative;
+    z-index: 1;
+    background: #50504e;
+    max-width: 360px;
+    margin: 0 auto 100px;
+    padding: 45px;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    border-radius: 3px;
+}
+input {
+    border: 3px solid #ff0000;
+    border-radius: 20px;
+    padding: 5px;
+}
+.btn {
+    font-weight: bold;
+    padding: 10px 30px;
+    background-color: rgb(0, 0, 255); 
+    color: white;
+    border-radius: 15px;
+    text-decoration: none;
+    cursor: pointer;
+    border: 3px solid rgb(0, 0, 0);
+    transition: background-color 1.0s, color 1.0s;
+}
+.btn:hover {
+    background-color: #5c8be8;
+    color: #000000;
+}
+body{
+    background-color: rgb(22, 22, 22);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#name{
+    color: aliceblue;
+    text-align: center;
+}
+#email{
+    color: aliceblue;
+    text-align: center;
+}
+#password{
+    color: aliceblue;
+    text-align: center;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="day11.css">
+  <title>Rice Roll!</title>
+</head>
+<body>
+
+  <div id="game">
+    <h2>Rice Roll! Game</h2>
+
+    <p>Player 1 Score: <span id="player1">0</span></p>
+    <p>Player 2 Score: <span id="player2Score">0</span></p>
+
+    <button onclick="rollDice()">Roll the Dice</button>
+
+    <div id="result"></div>
+    <div id="diceeee"></div>
+  </div>
+
+  <script>
+    function rollDice() {
+      // Generate random dice rolls for each player (1 to 6)
+      var player1Score = Math.floor(Math.random() * 6) + 1;
+      var player2Score = Math.floor(Math.random() * 6) + 1;
+
+      // Display the dice rolls
+      document.getElementById('diceeee').innerHTML = `Player 1 rolled: ${player1Score}<br>Player 2 rolled: ${player2Score}`;
+
+      // Update player scores
+      document.getElementById('player1').innerText = player1Score;
+      document.getElementById('player2S').innerText = player2Score;
+
+      // Determine the winner
+      var result = '';
+      if (player1Score > player2Score) {
+        result = 'Player 1 wins!';
+      } else if (player1Score < player2Score) {
+        result = 'Player 2 wins!';
+      } else {
+        result = 'It\'s a tie!';
+      }
+
+      // Display the winner
+      document.getElementById('result').innerText = result;
+    }
+  </script>
+
+</body>
+</html>

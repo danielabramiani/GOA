@@ -1,0 +1,29 @@
+<!-- HTML -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Change Background Color Example</title>
+  <style>
+    #box {
+      width: 200px;
+      height: 200px;
+      background-color: #f0f0f0;
+    }
+  </style>
+</head>
+<body>
+  <div id="box"></div>
+
+  <script>
+    function changeBackgroundColor(id, color) {
+      let element = document.getElementById(id);
+      if (element) {
+        element.style.backgroundColor = color;
+      }
+    }
+
+  </script>
+</body>
+</html>

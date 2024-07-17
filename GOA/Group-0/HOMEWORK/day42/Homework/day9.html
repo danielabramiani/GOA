@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your HTML Page</title>
+</head>
+<body>
+    <h1>Welcome to My Page</h1>
+    <p>This is a simple paragraph added to the body of the HTML document.</p>
+
+    <script>
+        // Inline JavaScript code
+        function addNumbers() {
+            // Prompt the user for input and store the values in variables
+            var num1 = prompt("Enter the first number:");
+            var num2 = prompt("Enter the second number:");
+            var num3 = prompt("Enter the third number:");
+
+            // Convert string numbers to mathematical numbers using the Number function
+            num1 = Number(num1);
+            num2 = Number(num2);
+            num3 = Number(num3);
+
+            // Add the three numbers
+            var sum = num1 + num2 + num3;
+
+            // Display the result using console.log
+            console.log("Sum of the three numbers: " + sum);
+        }
+
+        // Call the function to execute the code
+        addNumbers();
+    </script>
+</body>
+</html>

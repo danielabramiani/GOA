@@ -1,0 +1,200 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>display: grid</h1>
+
+<p>Use display: grid; to make a block-level grid container:</p>
+
+<div class="grid-container">
+  <div class="grid-item">1</div>
+  <div class="grid-item">2</div>
+  <div class="grid-item">3</div>  
+  <div class="grid-item">4</div>
+  <div class="grid-item">5</div>
+  <div class="grid-item">6</div>  
+  <div class="grid-item">7</div>
+  <div class="grid-item">8</div>
+  <div class="grid-item">9</div> 
+  <div class="grid-item">10</div> 
+</div> 
+
+
+</body>
+</html -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gap Example - Using Margin</title>
+<style>
+    .box {
+        background-color: #f0f0f0;
+        border: 1px solid #ccc;
+        margin-bottom: 20px; /* Gap using margin */
+        padding: 20px;
+    }
+</style>
+</head>
+<body>
+
+<div class="box">Box 1</div>
+<div class="box">Box 2</div>
+<div class="box">Box 3</div>
+
+</body>
+</html> -->
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gap Example - Using Padding</title>
+<style>
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+    .box {
+        background-color: #f0f0f0;
+        border: 1px solid #ccc;
+        padding-bottom: 20px; /* Gap using padding */
+        padding: 20px;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <div class="box">Box 1</div>
+    <div class="box">Box 2</div>
+    <div class="box">Box 3</div>
+</div>
+
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gap Example - Using Flexbox</title>
+<style>
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px; /* Gap using gap property in Flexbox */
+    }
+    .box {
+        background-color: #f0f0f0;
+        border: 1px solid #ccc;
+        padding: 20px;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <div class="box">Box 1</div>
+    <div class="box">Box 2</div>
+    <div class="box">Box 3</div>
+</div>
+
+</body>
+</html>
+ -->
+
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Grid App Layout</title>
+ <style>
+     * {
+         box-sizing: border-box;
+         margin: 0;
+         padding: 0;
+     }
+ 
+     body {
+         font-family: Arial, sans-serif;
+         background-color: #f0f0f0;
+         padding: 20px;
+     }
+ 
+     .container {
+         display: grid;
+         grid-template-rows: auto 1fr auto;
+        grid-template-columns: 1fr 2fr;
+         gap: 20px;
+         min-height: 100vh;
+     }
+ 
+     .header{
+         background-color: #333;
+         color: #fff;
+         padding: 10px;
+         text-align: center;
+         width: 1000px;
+         background-color: green;
+     }
+ 
+     .aside {
+         background-color: #ddd;
+         padding: 20px;
+         font-size: 16px;
+         grid-row: span 2;
+         height: 1000px;
+         background-color: rgb(249, 72, 101);
+     }
+ 
+     .content {
+         background-color: #6fff74;
+         padding: 20px;
+         
+     }
+ 
+     .footer {
+         font-size: 12px;
+        padding: 0;    
+        width: 1000px;
+        background-color: #333;
+        text-align: center;
+     }
+ 
+     @media screen and (max-width: 768px) {
+         .container {
+             grid-template-columns: 1fr; 
+         }
+     }
+ </style>
+ </head>
+ <body>
+ <div class="container">
+     <div class="header">
+         <h1>Title</h1>
+     </div>
+     <div class="aside">
+         <h2>Aside</h2>
+     </div>
+     <div class="content">
+         <h2>Main Content</h2>
+     </div>
+     <div class="footer">
+         <p>Footer</p>
+     </div>
+ </div>
+ </body>
+ </html>
+ 

@@ -1,0 +1,883 @@
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: rgrgb(0, 0, 0);
+    }
+    html{
+        scroll-behavior: smooth;
+    }
+    ol,ul {
+      list-style: none;
+    }
+    blockquote,
+    q {
+      quotes: none;
+    }
+    blockquote:before,
+    blockquote:after,
+    q:before,
+    q:after {
+      content: "";
+      content: none;
+    }
+    table {
+      border-collapse: collapse;
+      border-spacing: 0;
+    }
+    /* End of CSS reset */
+    nav {
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .nav-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+      background-color: black;
+      height: 5em;
+    }
+    .logo {
+      font-size: 1.8em;
+      font-weight: 700;
+      margin-left: 1em;
+      cursor: pointer;
+    }
+    .search input {
+      width: 15em;
+      background-color: rgb(253, 253, 253);
+      border: 1px solid rgb(200, 200, 200);
+      border-radius: 515px;
+      font-size: 16px;
+      padding: 6px 15px 6px 30px;
+      outline: none;
+      text-align: center;
+      max-width: 100%;
+      transition: ease-in-out 0.4s;
+      font-weight: 500;
+    }
+
+    .search input:hover {
+      border-color: rgb(0, 0, 0);
+      width: 30em;
+      padding: 10px 15px 10px 35px;
+      text-align: start;
+    }
+
+    .search input::placeholder {
+      text-align: center;
+    }
+
+    .log-in {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: row;
+      width: 10.5em;
+      margin-right: 2em;
+    }
+    .log-in a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.15em;
+      font-weight: 600;
+      transition: ease-in 0.3s;
+      padding: 6px 9px 6px 9px;
+      border-radius: 0px;
+    }
+    .log-in a:hover {
+      background-color: white;
+      color: black;
+      border-radius: 15px;
+    }
+    .nav-links {
+      height: 4em;
+      background-color: black;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      z-index: 2;
+    }
+    .nav-links a {
+      color: black;
+      background-color: white;
+
+      text-align: center;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 600;
+      transition: ease-in 0.3s;
+      padding: 11px 40px 11px 40px;
+      text-transform: uppercase;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      border: 2px solid rgb(138, 15, 15);
+      transition: ease-in 0.3s;
+    }
+    .nav-links a:first-of-type {
+      color: white;
+
+      background: linear-gradient(to top right, #2d2d2d, #000000, #1f1f1f)
+          padding-box,
+        linear-gradient(to top right, #ff0000, #000000 ) border-box;
+      border-radius: 5px;
+      border: 2px solid transparent;
+      transition: ease-in 0.9s;
+    }
+    .nav-links a:first-of-type:hover {
+        color: white;
+  
+        background: linear-gradient(to top right, #ff0e0e, #000000, #1f1f1f)
+            padding-box,
+          linear-gradient(to top right, #ff0000, #bbfe04 ) border-box;
+        border-radius: 5px;
+        border: 2px solid transparent;
+      }
+    .nav-links a:nth-of-type(n + 2):hover {
+      border-radius: 5px;
+      background-color: #000000;
+      border-radius: 20px;
+      border: 2px color(srgb rgb(255, 255, 255) rgb(25rgb(255, 255, 255)55, 255) rgb(255, 255, 255));
+      color: white;
+    }
+    .main-image {
+      height: 90vh;
+
+      background: linear-gradient(
+        to top left,
+        #4b0f0f,
+        #000000,
+        #161616,
+        #5a0000
+      );
+    }
+
+    .main-image img {
+      z-index: 1;
+      height: 50%;
+      width: auto;
+      max-width: 100%;
+      position: absolute;
+      top: 50%;
+      left: 45%;
+      transform: translate(-80%, -70%) rotate(-99deg);
+      filter: brightness(0.9);
+      animation: moveUpDown 12s ease-in-out infinite;
+    }
+    .main-image h1 {
+      color: transparent;
+      font-size: 16em;
+      width: 100vw;
+      text-align: center;
+      max-width: 100%;
+      position: absolute;
+      top: 52%;
+      left: 50%;
+      transform: translate(-50%, -90%);
+      z-index: 2;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      letter-spacing: -0.5px;
+      -webkit-text-stroke: 3px rgb(255, 255, 255);
+      white-space: nowrap;
+    }
+    .white-text {
+      color: white;
+    }
+    .typing-animation {
+      overflow: hidden;
+      animation: typing 8s ease-in-out forwards;
+    }
+    .expand-icon {
+      color: white;
+      position: absolute;
+      top: 90%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 10em;
+      opacity: 1;
+
+      animation: bounce 2s ease-in-out infinite;
+    }
+    .expand-button {
+      background-color: transparent;
+      border: none;
+
+      cursor: pointer;
+    }
+    .products-section {
+      background-color: rgb(15, 15, 15);
+    }
+    .item-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+      margin-top: 2em;
+    }
+    .item-card {
+      height: 500px;
+      background-color: white;
+      width: 375px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      border-radius: 10px;
+      margin: 10px 5px 10px 5px;
+      cursor: pointer;
+    }
+    .item-image {
+      height: 350px;
+      width: 350px;
+      object-fit: cover;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+    .item-name {
+      font-size: 1.5em;
+      font-weight: 700;
+      margin-left: 15px;
+      margin-top: 1em;
+      align-self: flex-start;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      width: 300px;
+      height: 26px;
+      white-space: nowrap;
+      cursor: pointer;
+    }
+    .item-category {
+      font-size: 1.2em;
+      font-weight: 600;
+      margin-left: 15px;
+      margin-top: 0.5em;
+      align-self: flex-start;
+      cursor: pointer;
+      color: rgb(55, 55, 55);
+    }
+    .item-price {
+      font-size: 1.2em;
+      font-weight: 600;
+      margin-left: 15px;
+      margin-top: 0.5em;
+      align-self: flex-start;
+      cursor: pointer;
+    }
+    .item-card:hover {
+      color: #dc1313;
+      transition: ease-in-out 0.9s;
+    }
+    .img-1 {
+      height: 350px;
+      width: 350px;
+      object-fit: cover;
+      margin-top: 10px;
+      background-size: 350px 450px;
+      background-position: center;
+      cursor: pointer;
+      transition: all 0.9s;
+      background-image: url("./433073671_433570429039099_7585575112854768554_n-removebg-preview.png");
+    }
+    .img-1:hover {
+      transform: scale(1.05);
+    }
+    .img-2 {
+      height: 350px;
+      width: 350px;
+      object-fit: cover;
+      background-position: center;
+
+      margin-top: 10px;
+      background-size: 350px 450px;
+      cursor: pointer;
+      background-repeat: no-repeat;
+      transition: all 0.9s;
+      background-image: url("https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/367b8bf4-5f4b-4914-941e-aae922ce6d8c/air-jordan-1-low-og-white-red-mens-shoes-v0FbJt.png");
+    }
+    .img-2:hover {
+        transform: scale(1.05);
+    }
+    .img-3 {
+      height: 350px;
+      width: 350px;
+      object-fit: cover;
+      background-position: center;
+      margin-top: 10px;
+      background-size: 350px 450px;
+      cursor: pointer;
+      background-repeat: no-repeat;
+      transition: all 0.9s;
+      background-image: url("https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/288a2235-54ce-4f8e-a133-0117cbc381b4/air-jordan-1-mid-mens-shoes-X5pM09.png");
+    }
+    .img-3:hover {
+        transform: scale(1.05)
+    }
+    .img-4 {
+      height: 350px;
+      width: 350px;
+      object-fit: cover;
+      background-position: center;
+      transition: all 0.9s;
+      margin-top: 10px;
+      background-size: 350px 450px;
+      cursor: pointer;
+      background-repeat: no-repeat;
+      transition: all 0.9s;
+      background-image: url("https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/6ede48e2-7cfa-4a17-8ccf-f0ae3f851a46/jumpman-mvp-mens-shoes-gzmjDz.png");
+    }
+    .img-4:hover {
+        transform: scale(1.05);
+    }
+    .img-5 {
+      height: 350px;
+      width: 350px;
+      object-fit: cover;
+      background-position: center;
+      margin-top: 10px;
+      background-size: 350px 450px;
+      cursor: pointer;
+      background-repeat: no-repeat;
+      transition: all 0.9s;
+      background-image: url(" https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/e7f621f8-d62e-481c-9ca5-66c961d055df/air-force-1-shadow-womens-shoes-kTgn9J.png");
+    }
+    .img-5:hover {
+        transform: scale(1.05);
+    }
+    .img-6 {
+      height: 350px;
+      width: 350px;
+      object-fit: cover;
+      background-position: center;
+      transition: all 0.9s;
+      margin-top: 10px;
+      background-size: 350px 450px;
+      cursor: pointer;
+      background-repeat: no-repeat;
+
+      background-image: url(" https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/4579d014-3547-4364-a2c8-77253a6063fb/air-force-1-07-mens-shoes-HqN8PG.png");
+    }
+    .img-6:hover {
+        transform: scale(1.05);
+    }
+    .img-7 {
+      height: 350px;
+      width: 350px;
+      object-fit: cover;
+      background-position: center;
+      transition: all 0.9s;
+      margin-top: 10px;
+      background-size: 350px 450px;
+      cursor: pointer;
+      background-repeat: no-repeat;
+      background-image: url("https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/f1f272c7-7c79-4fab-9d11-cdf96b67e0cf/court-legacy-next-nature-womens-shoes-8r07x0.png ");
+    }
+    .img-7:hover {
+        transform: scale(1.05);
+    }
+    .img-8 {
+      height: 350px;
+      width: 350px;
+      object-fit: cover;
+      background-position: center;
+      transition: all 0.9s;
+      margin-top: 10px;
+      background-size: 350px 450px;
+      cursor: pointer;
+      background-repeat: no-repeat;
+      background-image: url(" https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/806ccf97-9c17-43c3-9faa-f2eed708cbf3/free-metcon-5-premium-womens-workout-shoes-h4Zl5h.png");
+    }
+    .img-8:hover {
+        transform: scale(1.05);
+    }
+    .img-9 {
+      height: 350px;
+      width: 350px;
+      object-fit: cover;
+      background-position: center;
+      transition: all 0.9s;
+      margin-top: 10px;
+      background-size: 350px 450px;
+      cursor: pointer;
+      background-repeat: no-repeat;
+      background-image: url("./434094847_2122409371426250_4052745900838443824_n.png");
+    }
+    .img-9:hover {
+        transform: scale(1.05);
+    }
+    .img-10 {
+      height: 350px;
+      width: 350px;
+      object-fit: cover;
+      background-position: center;
+
+      margin-top: 10px;
+      background-size: 350px 450px;
+      transition: all 0.9s;
+      cursor: pointer;
+      background-repeat: no-repeat;
+      background-image: url("https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/935473f8-7721-47ab-9fee-592231870b45/lunar-force-1-mens-duckboot-PXSmlg.png ");
+    }
+    .img-10:hover {
+        transform: scale(1.05);
+    }
+    .img-11 {
+      height: 350px;
+      width: 350px;
+      object-fit: cover;
+      background-position: center;
+      margin-top: 10px;
+      background-size: 350px 450px;
+      cursor: pointer;
+      background-repeat: no-repeat;
+      background-image: url("https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/900033c1-92b7-4d0e-84f6-133ed52200d6/nikecourt-air-zoom-vapor-11-premium-womens-hard-court-tennis-shoes-5lVbnb.png ");
+    }
+    .img-11:hover {
+        transform: scale(1.05);
+    }
+    .img-12 {
+      height: 350px;
+      width: 350px;
+      object-fit: cover;
+      background-position: center;
+      transition: all 0.9s;
+      margin-top: 10px;
+      background-size: 350px 450px;
+      cursor: pointer;
+      background-repeat: no-repeat;
+      background-image: url("https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/854577d8-58b3-48c0-b360-54e6a858911e/air-zoom-generation-mens-shoes-gkwN12.png ");
+    }
+    .img-12:hover {
+        transform: scale(1.05);
+    }
+    .img-13 {
+      height: 350px;
+      width: 350px;
+      object-fit: cover;
+      background-position: center;
+      transition: all 0.9s;
+      margin-top: 10px;
+      background-size: 350px 450px;
+      cursor: pointer;
+      background-repeat: no-repeat;
+      background-image: url(" https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/27043200-1653-43c6-83d1-3c5893eb0894/air-zoom-flight-95-mens-shoes-zc42bP.png");
+    }
+    .img-13:hover {
+        transform: scale(1.05);
+    }
+    .img-14 {
+      height: 350px;
+      width: 350px;
+      object-fit: cover;
+      background-position: center;
+      margin-top: 10px;
+      background-size: 350px 450px;
+      transition: all 0.9s;
+      cursor: pointer;
+      background-repeat: no-repeat;
+      background-image: url(" https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/e6c1cd02-e938-44f4-8550-8c44cf1cffc9/air-zoom-infinity-tour-nrg-mens-golf-shoes-ZGRpRp.png");
+    }
+    .img-14:hover {
+        transform: scale(1.05);
+    }
+    .img-15 {
+      height: 350px;
+      width: 350px;
+      object-fit: cover;
+      background-position: center;
+      margin-top: 10px;
+      background-size: 350px 450px;
+      cursor: pointer;
+      transition: all 0.9s;
+      background-repeat: no-repeat;
+      background-image: url("https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/2f3ddd69-54d5-4cd4-87cd-132bb84acbf9/nikecourt-air-zoom-gp-turbo-osaka-womens-hard-court-tennis-shoes-ZdfLR2.png ");
+    }
+    .img-15:hover {
+        transform: scale(1.05);
+    }
+    .img-16 {
+      height: 350px;
+      width: 350px;
+      object-fit: cover;
+      background-position: center;
+      transition: all 0.9s;
+      margin-top: 10px;
+      background-size: 350px 450px;
+      cursor: pointer;
+      background-repeat: no-repeat;
+      background-image: url("https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/493f87d4-86f9-4fc5-8c63-ceff5b81a643/air-max-pulse-roam-mens-shoes-X285L2.png ");
+    }
+    .img-16:hover {
+      transform: scale(1.05);
+    }
+    .footer {
+      text-align: center;
+      color: white;
+      font-size: 28px;
+      padding: 50px;
+      background-color: rgb(10, 10, 10);
+      font-family: "Hind", sans-serif;
+      height: 50px;
+    }
+    .footer-text {
+      margin: 10px;
+    }
+
+    @keyframes typing {
+      from {
+        width: 0;
+      }
+      to {
+        width: 30em;
+      }
+    }
+
+    @keyframes moveUpDown {
+      0% {
+        top: 50%;
+        transform: translate(-50%, -50%) rotate(-35deg);
+      }
+      50% {
+        top: 60%;
+        transform: translate(-50%, -50%) rotate(-40deg);
+      }
+      100% {
+        top: 50%;
+        transform: translate(-50%, -50%) rotate(-35deg);
+      }
+    }
+
+    @keyframes bounce {
+      0%,
+      20%,
+      50%,
+      80%,
+      100% {
+        top: 90%;
+      }
+      40% {
+        top: 85%;
+      }
+      60% {
+        top: 88%;
+      }
+    }
+@media screen and (max-width: 1400px) {
+      .nav-links a {
+        font-size: 15px;
+        padding: 11px 30px 11px 30px;
+      }
+      .main-image h1 {
+        font-size: 12em;
+      }
+    }
+    @media screen and (max-width: 1200px) {
+      .nav-links a {
+        font-size: 14px;
+        padding: 10px 25px 10px 25px;
+      }
+      .main-image h1 {
+        font-size: 10em;
+      }
+      .main-image img {
+        height: 40%;
+        top: 65%;
+      }
+    }
+    @media screen and (max-width: 1000px) {
+      .nav-links a {
+        font-size: 12px;
+        padding: 10px 20px 10px 20px;
+      }
+      .main-image img {
+        height: 35%;
+        top: 65%;
+      }
+
+      .search input:focus {
+        border-color: rgb(0, 0, 0);
+        width: 25em;
+        padding: 8px 15px 8px 35px;
+        text-align: start;
+      }
+    }
+    @media screen and (max-width: 820px) {
+      .nav-links a {
+        font-size: 11px;
+        padding: 9px 16px 9px 16px;
+      }
+      .main-image img {
+        height: 30%;
+        top: 65%;
+      }
+      .main-image h1 {
+        font-size: 8em;
+      }
+      .log-in {
+        width: 9.5em;
+        margin-right: 1em;
+      }
+      .log-in a {
+        font-size: 1em;
+
+        padding: 6px 9px 6px 9px;
+      }
+    }
+    @media screen and (max-width: 720px) {
+      .nav-links a {
+        font-size: 15px;
+        padding: 8px 25px 8px 25px;
+
+        margin-left: 5px;
+        margin-right: 5px;
+      }
+      .nav-links {
+        height: 5.5em;
+      }
+      .main-image img {
+        height: 30%;
+        top: 65%;
+      }
+      .main-image h1 {
+        font-size: 8em;
+      }
+    }
+    @media screen and (max-width: 620px) {
+      .nav-links a {
+        font-size: 13px;
+        padding: 8px 20px 8px 20px;
+
+        margin-left: 5px;
+        margin-right: 5px;
+      }
+      .log-in {
+        width: 8em;
+        margin-right: 1em;
+      }
+      .log-in a {
+        font-size: 0.8em;
+
+        padding: 6px 9px 6px 9px;
+      }
+      .search input {
+        width: 12em;
+
+        font-size: 14px;
+        padding: 6px 15px 6px 30px;
+
+        margin-right: 10px;
+      }
+      .search input:focus {
+        border-color: rgb(0, 0, 0);
+        width: 16em;
+        font-size: 14px;
+        padding: 8px 15px 8px 35px;
+        text-align: start;
+      }
+      .main-image h1 {
+        font-size: 6em;
+      }
+    }
+    @media screen and (max-width: 530px) {
+      .nav-links a {
+        font-size: 11px;
+        padding: 8px 16px 8px 16px;
+
+        margin-left: 5px;
+        margin-right: 5px;
+      }
+      .main-image img {
+        height: 30%;
+        top: 65%;
+      }
+    }
+    @media screen and (max-width: 500px) {
+      .log-in {
+        width: 7em;
+        margin-right: 1em;
+      }
+      .log-in a {
+        font-size: 0.7em;
+        padding: 4px 6px 4px 6px;
+      }
+      .search input {
+        width: 10em;
+
+        font-size: 12px;
+        padding: 6px 15px 6px 30px;
+
+        margin-right: 10px;
+      }
+      .search input:focus {
+        width: 12em;
+        font-size: 12px;
+        padding: 6px 15px 6px 35px;
+        text-align: start;
+      }
+      .logo {
+        font-size: 1.2em;
+      }
+    }
+    @media screen and (max-width: 450px) {
+      .nav-links a {
+        font-size: 11px;
+        padding: 6px 14px 6px 14px;
+
+        margin-left: 5px;
+        margin-right: 5px;
+      }
+      .nav-links {
+        height: 4em;
+      }
+    }
+    @media screen and (max-width: 425px) {
+      .log-in {
+        width: 6em;
+        margin-right: 1em;
+        flex-direction: column;
+      }
+      .log-in a {
+        font-size: 0.6em;
+        padding: 4px 6px 4px 6px;
+        margin-top: 2px;
+      }
+      .nav-links a {
+        font-size: 9px;
+        padding: 5px 10px 4px 10px;
+
+        margin-left: 5px;
+        margin-right: 5px;
+      }
+      .nav-links {
+        height: 3em;
+      }
+      .nav-bar {
+        height: 3em;
+      }
+      .search input {
+        width: 12em;
+
+        font-size: 8px;
+        padding: 4px 15px 4px 22px;
+        text-align: left;
+
+        margin-right: 10px;
+      }
+      .search input:focus {
+        width: 12em;
+        font-size: 9px;
+        padding: 4px 15px 4px 22px;
+        text-align: left;
+      }
+      .search-icon {
+        color: gray;
+        position: relative;
+        left: 24px;
+        top: 3px;
+        font-size: 0.8em;
+      }
+      .search input::placeholder {
+        text-align: left;
+      }
+      .logo {
+        font-size: 1em;
+      }
+      .main-image h1 {
+        font-size: 4em;
+        -webkit-text-stroke: 1px rgb(255, 255, 255);
+      }
+    }
+    @media screen and (max-width: 340px) {
+      .nav-links a {
+        font-size: 9px;
+        padding: 5px 8px 3px 8px;
+
+        margin-left: 2px;
+        margin-right: 2px;
+      }
+      .search input {
+        width: 12em;
+
+        font-size: 8px;
+        padding: 3px 10px 3px 10px;
+        text-align: left;
+
+        position: relative;
+        left: 10px;
+      }
+      .search input:focus {
+        width: 13em;
+        font-size: 9px;
+        padding: 3px 10px 3px 10px;
+        text-align: left;
+      }
+      .search-icon {
+        opacity: 0;
+      }
+      .logo {
+        font-size: 0.7em;
+      }
+      .log-in {
+        width: 6em;
+        margin-right: 1em;
+        flex-direction: column;
+      }
+      .log-in a {
+        font-size: 0.6em;
+        padding: 1px 6px 1px 6px;
+        margin-top: 2px;
+      }
+    }
+
+    @media screen and (max-width: 1400px) {
+      /* Adjustments for screen width up to 1400px */
+      /* Example: */
+      .nav-links a {
+        font-size: 14px;
+        padding: 10px 25px;
+      }
+    }
+    
+    @media screen and (max-width: 1200px) {
+      /* Adjustments for screen width up to 1200px */
+      /* Example: */
+      .nav-links a {
+        font-size: 12px;
+        padding: 8px 20px;
+      }
+    }
+    
+    /* Add more media queries for other screen sizes as needed */
+    
+    /* Additional media queries for smaller screen sizes */
+    
+    @media screen and (max-width: 768px) {
+      /* Adjustments for screen width up to 768px */
+    }
+    
+    @media screen and (max-width: 576px) {
+      /* Adjustments for screen width up to 576px */
+    }
+    
+    @media (min-width: 1200px) {
+      /* Adjustments for large devices */
+    }
+    
+    /* Medium devices (tablets) */
+    @media (min-width: 768px) and (max-width: 1199px) {
+      /* Adjustments for medium devices */
+    }
+    
+    /* Small devices (landscape phones) */
+    @media (min-width: 576px) and (max-width: 767px) {
+      /* Adjustments for small devices in landscape mode */
+    }
+    
+    /* Extra small devices (portrait phones) */
+    @media (max-width: 575px) {
+      /* Adjustments for extra small devices in portrait mode */
+    }
+    

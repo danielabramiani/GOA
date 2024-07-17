@@ -1,0 +1,28 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1e1e1e;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.container {
+    text-align: center;
+}
+img {
+    width: 200px;
+    height: 200px;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+audio {
+    width: 100%;
+    margin-top: 20px;
+    background-color: #1e1e1e;
+    color: #1e1e1e;
+}
+source{
+    background-color: #1e1e1e;
+}

@@ -1,0 +1,19 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: white;
+}
+form {
+    max-width: 400px;
+    padding: 20px;
+    background-color: rgba(247, 247, 247, 0.7);
+    box-shadow: black;
+    text-align: center;
+    border-radius: 10px;
+}
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}

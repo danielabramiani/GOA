@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@100..900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Noto Sans Georgian';
+}
+  
+body{
+  background-color: #232323; 
+  color: white;
+  font-family: "Noto Sans Georgian", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600px;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+  
+header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+} 
+span{
+  color: rgb(7, 161, 20);
+}
+ 
+  
+header nav ul{
+  display: flex;
+  align-items: center;
+  gap: 180px;
+  list-style: none;
+  font-size: larger;
+}
+  
+ 
+  
+header nav ul li a{
+  color: white;
+  text-decoration: none;
+  transition: 0.2s linear;
+}
+  
+header nav ul li a:hover{
+  color: rgb(8, 112, 6);
+}
+
+#img{
+  width: 5%;
+  border-radius: 5%;
+  transition: 0.5s;
+  box-shadow: 5px 0px 4px 2px rgb(3, 86, 21);
+}
+  
+#img:hover{
+  box-shadow: 0px 2px 3px 5px rgb(8, 58, 23);
+  transform: translateY(-10%);
+}
+
+.img-text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: auto;
+  gap: 400px;
+  height: 80vh;
+}
+  
+.img-text h2{
+    font-size: 40px;
+    width: 400px;
+    text-shadow: 0px  5px rgb(31, 114, 5);
+  }
+  
+  .img{
+    width: 480px;
+  }
+  
+  .img img{
+    width: 150%;
+    border-radius: 10px;
+    transition: 0.5s;
+  }
+  
+  .img img:hover{
+    transform: scale(1.05);
+  }
+
+  #stat{
+    padding: 30px 0;
+  }
+  .services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+  }
+  .image{
+    width: 190px;
+  }
+  .img{
+    width: 190px;
+  }
+  .services-list div{
+    background-color: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-right: 10px;
+    transition: background 1.2s, transform 1.2s;
+  }
+  .services-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+  }
+  .services-list div:hover{
+    background-color: rgb(14, 118, 6);
+    transform: translateY(-30px);
+  }
+
+.slider {
+    max-width: 100rem;
+    height: 50rem;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 50rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 1s;
+}
+
+.slide > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slider__btn {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    border: none;
+    background: rgba(255, 255, 255, 0.7);
+    font-family: inherit;
+    color: #0b0b0b;
+    border-radius: 50%;
+    height: 5.5rem;
+    width: 5.5rem;
+    font-size: 3.25rem;
+    cursor: pointer;
+}
+
+.slider__btn--left {
+    left: 6%;
+    transform: translate(-50%, -50%);
+}
+
+.slider__btn--right {
+    right: 6%;
+    transform: translate(50%, -50%);
+}
+
+.dots {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.dots__dot {
+    border: none;
+    background-color: #b9b9b9;
+    opacity: 0.7;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    margin-right: 1.75rem;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.dots__dot:last-child {
+    margin: 0;
+}
+
+.dots__dot--active {
+    background-color: #888;
+    opacity: 1;
+}
+
+.testimonial {
+    width: 65%;
+    position: relative;
+}
+
+.testimonial::before {
+    content: '\201C';
+    position: absolute;
+    top: -5.7rem;
+    left: -6.8rem;
+    line-height: 1;
+    font-size: 20rem;
+    font-family: inherit;
+    color: #4ae16d;
+    z-index: -1;
+}
+
+.testimonial__header {
+    font-size: 2.25rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+
+.testimonial__text {
+    font-size: 1.7rem;
+    margin-bottom: 3.5rem;
+    color: #ffffff;
+}
+
+.testimonial__author {
+    margin-left: 3rem;
+    font-style: normal;
+    display: grid;
+    grid-template-columns: 6.5rem 1fr;
+    column-gap: 2rem;
+}
+
+.testimonial__photo {
+    grid-row: 1 / span 2;
+    width: 6.5rem;
+    border-radius: 50%;
+}
+
+.testimonial__name {
+    font-size: 1.7rem;
+    font-weight: 500;
+    align-self: end;
+    margin: 0;
+}
+
+.testimonial__location {
+    font-size: 1.5rem;
+}
+
+.section__title--testimonials {
+    margin-bottom: 4rem;
+}
+
+.footer {
+  padding: 10rem 3rem;
+  background-color: #37383d;
+}
+
+.footer__nav {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+
+.footer__item {
+  margin-right: 4rem;
+}
+
+.footer__link {
+  font-size: 1.6rem;
+  color: #eee;
+  text-decoration: none;
+}
+
+.footer__logo {
+  height: 5rem;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 5rem;
+  border-radius: 5px;
+}
+
+.footer__copyright {
+  font-size: 1.4rem;
+  color: #aaa;
+  text-align: center;
+}
+
+.footer__copyright .footer__link {
+  font-size: 1.4rem;
+}

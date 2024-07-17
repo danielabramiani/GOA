@@ -1,0 +1,1 @@
+checkRange=(a,x,y)=>a.map(n=>i+=x>n==n>y,i=0)|i
