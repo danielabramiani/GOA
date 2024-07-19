@@ -1,0 +1,253 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: hsl(226, 43%, 10%);
+    color: #fff;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+    font-size: 0.8rem;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+.active{
+    color: #fff !important;
+}
+.profile-card{
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: 7rem;
+    width: 15rem;
+
+}
+.profile-img{
+    max-width: 2.5rem;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    justify-self: end;
+    
+}
+.profile{
+    background-color: hsl(246, 80%, 60%);
+    border-radius: 0.7rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-row: 1/3;
+    align-items: center;
+    justify-items: center;
+    grid-gap: 0.8rem;
+
+}
+.text{
+    justify-self: start;
+    font-weight: 500;
+    line-height: 1.2rem;
+}
+.text h3{
+    font-weight: 300;
+}
+.periods{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-items: center;
+    font-size: small;
+    margin-left: 0.7rem;
+}
+.periods a{
+   color: hsl(246, 80%, 60%);
+}
+.activities{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(7, 1fr);
+    row-gap: 1rem;
+    align-items: center;
+    justify-items: center;
+    margin: 3rem auto;
+}
+.act1{
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 25% 75%;
+    height: 7rem;
+    width: 15rem;
+
+}
+.work{
+    background-color: hsl(15, 100%, 70%);
+}
+.play{
+    background-color: hsl(195, 74%, 62%);
+}
+.study{
+    background-color: hsl(348, 100%, 68%);
+}
+.exercise{
+    background-color: hsl(145, 58%, 55%);
+}
+.social{
+    background-color: hsl(264, 64%, 52%);
+}
+.selfCare{
+    background-color: hsl(43, 84%, 65%);
+}
+.actIcon{
+    grid-column: 2/4;
+}
+.actIcon>img{
+    max-width: 3rem;
+    align-self: end;
+    justify-self: end;
+}
+.containerTextact{
+    background-color: hsl(235, 46%, 20%);
+    max-width: 15rem;
+    border-radius: 10px;
+    grid-column: 1/4;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    padding: .9rem;
+}
+.containerTextact:hover{
+    cursor: pointer;
+    background-color: hsl(235, 33%, 50%);
+}
+.end{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: x-large;
+    font-weight: 300;
+    line-height: 1.5rem;
+}
+.end p:nth-last-child(1){
+    justify-self: right;
+    font-size: x-small;
+    color: hsl(236, 100%, 87%);
+}
+.begin{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-weight: 400;
+    font-size: x-small;
+}
+.begin>img{
+    max-width: 1rem;
+    justify-self: right;
+    margin-top: .5rem
+    
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+@media only screen and (min-width: 768px) {
+    main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    .activities{
+        display: grid;
+        grid-template-columns:  repeat(4, 10rem);
+        grid-template-rows: 1fr 1fr;
+        align-items: center;
+        justify-items: center;
+        grid-gap:1rem;
+    
+    }
+    .profile-card{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        height: 17rem;
+        width: 10rem;
+        grid-row: 1/3;
+            
+    }
+    .profile-img{
+        width: 2.5rem;
+        border: 3px solid #fff;
+        border-radius: 50%;
+        align-self: start;
+        justify-self: start;
+        
+    }
+    .profile{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 3fr;
+        grid-row: 1/3;
+        align-items: center;
+        justify-items: center;
+        grid-gap: 0.8rem;
+        padding: .7rem;
+    }
+    .text{
+        justify-self: start;
+        align-self: start;
+        line-height: 2rem;
+    }
+    .text h3{
+        font-size: x-large;
+    }
+    .periods{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        align-items: center;
+        justify-items: start;
+        padding: .5rem;
+    
+    }
+
+   
+    .act1{
+        border-radius: 10px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 25% 75%;
+        height: 8rem;
+        width: 10rem;
+    
+    }
+    .actIcon{
+        grid-column: 2/4;
+    }
+    .actIcon>img{
+        max-width: 3rem;
+        align-self: end;
+        justify-self: end;
+    }
+    .containerTextact{
+        background-color: hsl(235, 46%, 20%);
+        max-width: 15rem;
+        border-radius: 10px;
+        grid-column: 1/4;
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: .7rem;
+    }
+    .end{
+        display: flex;
+        flex-direction: column;
+        font-size: x-large;
+    }
+    .begin{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+    }
+    .begin>img{
+        width: 0.9rem;
+        align-self: right;
+        margin-top: .5rem;
+    }
+}
