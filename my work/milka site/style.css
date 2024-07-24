@@ -6,11 +6,60 @@ body {
     padding: 0;
     line-height: 1;
     font-family: 'Indie Flower';
-    background-color: rgrgb(0, 0, 0);
+    background-color: #c7bbe0;
 }
 html{
     scroll-behavior: smooth;
 }
+
+header {
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: background-color 0.5s ease-in-out; 
+}
+
+header.scrolled {
+  background-color: #7f6aac; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.logo {
+  height: 80px; 
+  width: 80px;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+
+ul li {
+  margin-right: 20px;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
+  transition: color 0.5s ease;
+}
+
+ul li a:hover {
+  color: #ffffff; 
+}
+
 
 .main-image {
     height: 90vh;
@@ -65,4 +114,133 @@ html{
     60% {
       top: 88%;
     }
+}
+
+.commerical-section {
+  background-image: url(./images/milka-goodness.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  margin-bottom: 50px;
+  margin-top: 100px;
+  color: #fff;
+}
+
+.commerical-section .container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.commerical-section .col-lg-6 {
+  padding: 100px 100px 10px 100px;
+}
+
+.commerical-section .pictures {
+  display: flex;
+  flex-direction: column;
+}
+
+.commerical-section .pictures .images img {
+  height: 150px;
+  width: 250px;
+}
+
+.commerical-section .pictures .commerical-active-image {
+  width: 280px;
+  height: 180px;
+}
+
+.commerical-section .pictures .commerical-active-image img {
+  width: 100%;
+  height: 100%;
+  opacity: 0.9;
+  border: solid 2px #fff;
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.col-lg-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.title h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.tag-line h3 {
+    font-size: 1.5rem;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.tag-line h5 {
+    font-size: 0.9rem;
+}
+
+.description p {
+    font-size: 1rem;
+    line-height: 1.6;
+    font-weight: bolder;
+}
+
+.buttons {
+    margin-top: 30px;
+}
+
+.pictures {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+}
+
+.images {
+    margin-left: 10px;
+}
+
+.images img {
+    max-width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+.footer{
+  margin-top: 100px;
+  background: rgb(25, 25, 25);
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+  
+.footer-card{
+  display: flex;
+  gap: 30px;
 }

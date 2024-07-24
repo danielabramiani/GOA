@@ -53,7 +53,7 @@ let period = document.querySelectorAll(".end");
 let dailyBtn = document.getElementById("daily");
 let weeklyBtn = document.getElementById("weekly");
 let monthlyBtn = document.getElementById("monthly");
-  
+
 dailyBtn.addEventListener('click', showDaily);
 weeklyBtn.addEventListener('click', showWeekly);
 monthlyBtn.addEventListener('click', showMonthly);
@@ -91,4 +91,4 @@ function showMonthly() {
     }
 }
   
-showWeekly();
+showWeekly()
