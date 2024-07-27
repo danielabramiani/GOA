@@ -1,6 +1,6 @@
 $(document).ready(function() {
     $(window).scroll(function() {
-        if ($(this).scrollTop() > 400) {
+        if ($(this).scrollTop() > 200) {
             $('header').addClass('scrolled');
         } else {
             $('header').removeClass('scrolled');
