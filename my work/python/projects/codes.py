@@ -177,9 +177,90 @@ for some in fruits:
 for daniel in range(6):
   print(daniel)
   
+def find_it(seq):
+    if len(seq) == 0:
+        return None
+    
+    for x in seq:
+        count = 0
+        for number in seq:
+            if number == x:
+                count += 1
+                
+        if count % 2 == 1:
+            return x
+    return None
+
+def solution(number):
+    sum = 0
+    for x in range(0, number):
+        if x % 3 == 0 or x % 5 == 0:
+            sum += x
+    return sum
+
+def spin_words(sentence):
+    if len(sentence) == 0:
+        return "" 
+    words = sentence.split()
+    for i, word in enumerate(words):
+        if len(word) >= 5:
+            words[i] = reverse(word)
+    
+    return " ".join(words)
+
+def reverse(word):
+    return word[::-1]
+
+def get_count(sentence):
+    count = 0
+    for char in sentence:
+        if char in "aeiouAEIOU":
+            count += 1
+    return count
+
+#endswith() Method
+
+name = "daniel"
+
+if name.endswith("l"):
+    print(True)
+  
+# txt = "Hello, welcome to my world."
+
+# x = txt.endswith(".")
+
+# print(x)
+
+#we want to explain how does string ends
+
+def string(end, starts):
+    if starts.endswith(end):
+        print(True)
+
+string("l", "daniel")
+
+  
+#dictionary
+
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+
+print(thisdict)
+  
+  
+  
+  
+  
+  
+  
+  
+  
   
 #project with given recources
-
+"""
 contacts = []
 
 def add_contact(name, phone):
@@ -250,3 +331,222 @@ def main():
             print("Invalid choice. Please try again.")
 
 main()
+
+
+
+
+
+#task list
+
+tasks = []
+
+def add_task(task):
+    tasks.append({"task": task, "completed": False})
+    print(f"Added task: {task}")
+
+def view_tasks():
+    if not tasks:
+        print("No tasks available.")
+    for idx, task in enumerate(tasks):
+        status = "Completed" if task["completed"] else "Pending"
+        print(f"{idx + 1}. {task['task']} - {status}")
+
+def remove_task(index):
+    if 0 <= index < len(tasks):
+        removed_task = tasks.pop(index)
+        print(f"Removed task: {removed_task['task']}")
+    else:
+        print("Invalid task number.")
+
+def complete_task(index):
+    if 0 <= index < len(tasks):
+        tasks[index]["completed"] = True
+        print(f"Task marked as completed: {tasks[index]['task']}")
+    else:
+        print("Invalid task number.")
+
+def main1():
+    while True:
+        print("\nTask List Manager")
+        print("1. Add Task")
+        print("2. View Tasks")
+        print("3. Remove Task")
+        print("4. Complete Task")
+        print("5. Exit")
+
+        choice = input("Enter choice: ").strip()
+
+        if choice == "1":
+            task = input("Enter task: ").strip()
+            add_task(task)
+        elif choice == "2":
+            view_tasks()
+        elif choice == "3":
+            index = int(input("Enter task number to remove: ")) - 1
+            remove_task(index)
+        elif choice == "4":
+            index = int(input("Enter task number to complete: ")) - 1
+            complete_task(index)
+        elif choice == "5":
+            print("Exiting...")
+            break
+        else:
+            print("Invalid choice. Please try again.")
+
+main1()
+
+
+#grades
+
+grades = {}
+
+def add_or_update_grade(name, grade):
+    grades[name] = grade
+    print(f"Added/Updated grade for {name}: {grade}")
+
+def view_grades():
+    if not grades:
+        print("No grades available.")
+    for name, grade in grades.items():
+        print(f"{name}: {grade}")
+
+def remove_grade(name):
+    if name in grades:
+        del grades[name]
+        print(f"Removed grade for {name}")
+    else:
+        print("Student not found.")
+
+def main3():
+    while True:
+        print("\nStudent Grades Tracker")
+        print("1. Add/Update Grade")
+        print("2. View Grades")
+        print("3. Remove Grade")
+        print("4. Exit")
+
+        choice = input("Enter choice: ").strip()
+
+        if choice == "1":
+            name = input("Enter student name: ").strip()
+            grade = input("Enter grade: ").strip()
+            add_or_update_grade(name, grade)
+        elif choice == "2":
+            view_grades()
+        elif choice == "3":
+            name = input("Enter student name to remove: ").strip()
+            remove_grade(name)
+        elif choice == "4":
+            print("Exiting...")
+            break
+        else:
+            print("Invalid choice. Please try again.")
+
+main3()
+
+
+
+
+
+
+#to do list
+
+to_do_list = []
+
+def add_task(task):
+    to_do_list.append({"task": task, "completed": False})
+    print(f"Added task: {task}")
+
+def view_tasks():
+    if not to_do_list:
+        print("No tasks available.")
+    for idx, task in enumerate(to_do_list):
+        status = "Completed" if task["completed"] else "Pending"
+        print(f"{idx + 1}. {task['task']} - {status}")
+
+def complete_task(index):
+    if 0 <= index < len(to_do_list):
+        to_do_list[index]["completed"] = True
+        print(f"Task marked as completed: {to_do_list[index]['task']}")
+    else:
+        print("Invalid task number.")
+
+def main4():
+    while True:
+        print("\nSimple To-Do List")
+        print("1. Add Task")
+        print("2. View Tasks")
+        print("3. Complete Task")
+        print("4. Exit")
+
+        choice = input("Enter choice: ").strip()
+
+        if choice == "1":
+            task = input("Enter task: ").strip()
+            add_task(task)
+        elif choice == "2":
+            view_tasks()
+        elif choice == "3":
+            index = int(input("Enter task number to complete: ")) - 1
+            complete_task(index)
+        elif choice == "4":
+            print("Exiting...")
+            break
+        else:
+            print("Invalid choice. Please try again.")
+
+main4()
+
+
+
+
+
+
+
+#calculator
+def add(x, y):
+    return x + y
+
+def subtract(x, y):
+    return x - y
+
+def multiply(x, y):
+    return x * y
+
+def divide(x, y):
+    if y != 0:
+        return x / y
+    else:
+        return "Error: Division by zero."
+
+def main5():
+    while True:
+        print("\nBasic Calculator")
+        print("1. Add")
+        print("2. Subtract")
+        print("3. Multiply")
+        print("4. Divide")
+        print("5. Exit")
+
+        choice = input("Enter choice: ").strip()
+        
+        if choice in {"1", "2", "3", "4"}:
+            x = float(input("Enter first number: "))
+            y = float(input("Enter second number: "))
+
+            if choice == "1":
+                print(f"Result: {add(x, y)}")
+            elif choice == "2":
+                print(f"Result: {subtract(x, y)}")
+            elif choice == "3":
+                print(f"Result: {multiply(x, y)}")
+            elif choice == "4":
+                print(f"Result: {divide(x, y)}")
+        elif choice == "5":
+            print("Exiting...")
+            break
+        else:
+            print("Invalid choice. Please try again.")
+
+main5()
+"""
