@@ -128,15 +128,32 @@ def capitalizing_in_pasport(name, lastname, parentsname, momname):
 
 capitalizing_in_pasport("daniel", "abramaini", "chiko", "ninuca")
 
+#String format() Method
+
+txt = "For only {price:.2f} dollars!"
+print(txt.format(price = 49))
+
+def create_phone_number(n):
+    return "({}{}{}) {}{}{}-{}{}{}{}".format(*n)
+
+phone_number = create_phone_number([1, 2, 3, 4, 5, 6, 7, 8, 9, 0])
+print(phone_number)
+
+def create_date_birth(year, date, month):
+    return "{} {}  {}".format(date, year, month)
+
+my_birth = create_date_birth(["2010", "4", "Octomber"])
+print(my_birth)
+
 #List extend() Method
 
-fruits = ['apple', 'banana', 'cherry']
+fruit = ['apple', 'banana', 'cherry']
 
 cars = ['Ford', 'BMW', 'Volvo']
 
-fruits.extend(cars)
+fruit.extend(cars)
 
-print(fruits)
+print(fruit)
 
 def extend_list(original_list, new_elements):
     original_list.extend(new_elements)
@@ -250,12 +267,91 @@ thisdict = {
 
 print(thisdict)
   
+print(len(thisdict))
+
+# def create_phone_number(n):
+#     return "({}{}{}) {}{}{}-{}{}{}{}".format(*n)
+#without dict
+
+
+#with dict
+
+def create_phone_number_dict(phone_dict):
+    return "({}{}{}) {}{}{}-{}{}{}{}".format(
+        phone_dict['a1'], phone_dict['a2'], phone_dict['a3'],
+        phone_dict['b1'], phone_dict['b2'], phone_dict['b3'],
+        phone_dict['c1'], phone_dict['c2'], phone_dict['c3'], phone_dict['c4']
+    )
+
+phone_dict = {
+    'a1': 1, 'a2': 2, 'a3': 3,
+    'b1': 4, 'b2': 5, 'b3': 6,
+    'c1': 7, 'c2': 8, 'c3': 9, 'c4': 0
+}
+
+phone_number_dict = create_phone_number_dict(phone_dict)
+print(phone_number_dict)
+
   
   
+#bin() Function
+
+number = 891392
+bin(number)
+
+def count_bits(n):
+    return bin(n).count("1")
   
+count_bits(29329)
   
+print(count_bits)
+
+
+
+#map() Function
+
+def myfunc(n):
+  return len(n)
+
+x = map(myfunc, ('apple', 'banana', 'cherry'))
+
+def myfunc(a, b):
+  return a + b
+
+x = map(myfunc, ('apple', 'banana', 'cherry'), ('orange', 'lemon', 'pineapple'))
+
+#Dictionary get() Method
+
+car = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+
+x = car.get("model")
+
+print(x)
+
+def traffic_light(current_state):
+    state_transitions = {
+        "green": "yellow",
+        "yellow": "red",
+        "red": "green"
+    }
+    
+    return state_transitions.get(current_state, "Invalid state")
   
-  
+#not keyword
+
+x = False
+
+print(not x)
+
+def name(name_daniel):
+    namesss = "danielii"
+    print(name_daniel not namesss)
+
+name("daniel")  
   
   
   
