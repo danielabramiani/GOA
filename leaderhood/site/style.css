@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #fff;
+    background-color: #ECF2F8;
+    margin: 4em auto;
+}
+
+h2,p {
+    margin: 0;
+    padding: 0;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.card {
+    grid-area: card;
+    box-sizing: border-box;
+    background: hsl(263, 55%, 52%);
+    border-radius: 10px;
+    padding: 2em 1.75em;
+    margin: 1em;
+    display: grid;
+    grid-template-columns: 45px auto;
+    grid-template-rows: 16px 16px auto minmax(auto, 1fr);
+    grid-template-areas:
+        "img name"
+        "img title"
+        "main-quote main-quote"
+        "testimonial testimonial";
+}
+
+.name {
+    grid-area: name;
+    font-size: .8125rem;
+    font-weight: 500;
+}
+
+.title {
+    grid-area: title;
+    font-size: .6875rem;
+    opacity: 50%;
+    margin-top: 2px;
+}
+
+.main {
+    grid-area: main;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 1em 0;
+}
+
+.testimonials {
+    font-size: .8125rem;
+    grid-area: testimonial;
+    color: hsl(0, 0%, 81%);
+    opacity: 70%;
+    line-height: 1.6;
+}
+
+.image {
+    grid-area: img;
+    height: 28px;
+    width: auto;
+    border-radius: 100%;
+    margin-top: 2px;
+}
+
+.accent-border {
+    border: 2px solid;
+}
+
+.card1 {
+    grid-area: card1;
+    background: hsl(263, 55%, 52%);
+    color: #fff;
+    background-image: url(./images/qutation\ mark.svg);
+    background-repeat: no-repeat;
+    background-position: 85% 0%;
+}
+
+.card2 {
+    grid-area: card2;
+    background: hsl(217, 19%, 35%);
+    color: #fff;
+}
+
+.card3 {
+    grid-area: card3;
+}
+
+.card4 {
+    grid-area: card4;
+    background: hsl(219, 29%, 14%);
+    color: #fff;
+}
+
+.card5 {
+    grid-area: card5;
+}
+
+.card3,
+.card5 {
+    background: #fff;
+    color: hsl(217, 19%, 35%);
+}
+
+
+@media (min-width: 600px){
+    .container{
+        display: grid;
+        grid-template-columns: minmax(250px, auto) minmax(250px, auto);
+        grid-template-areas: 
+        "card1 card4"
+        "card 2 card3"
+        "card5 card5";
+        gap: 2rem;
+        padding: 2rem;
+        align-items: unset;
+    }
+
+    .card{
+        margin: 0;
+    }
+}
+
+@media(min-width: 1100px){
+    .container{
+        grid-template-columns: repeat(4, minmax(200px, auto));
+        grid-template-areas: 
+        "card1 card1 card2 card5"
+        "card3 card4 card4 card5";
+    }
+
+    .card{
+        margin: 0;
+        padding: 2rem;
+    }
+
+    .card1{
+        background-position: 80% 0%;
+    }
+}
