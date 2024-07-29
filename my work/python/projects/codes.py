@@ -186,7 +186,7 @@ for word in "banana":
   print(word)
   
 fruits = ["apple", "banana", "cherry"]
-for some in fruits:
+for some in s:
   if some == "banana":
     continue
   print(some)
@@ -347,13 +347,90 @@ x = False
 
 print(not x)
 
-def name(name_daniel):
-    namesss = "danielii"
-    print(name_daniel not namesss)
+def is_not_even(number):
+    return not (number % 2 == 0)
 
-name("daniel")  
+print(is_not_even(4))
+  
+
+#isinstance() Function
+
+x = isinstance(5, int)
+
+print(x)
+
+#using in functions
+def sum_array(arr):
+    total_sum = 0
+    for item in arr:
+        if isinstance(item, str):
+            item = int(item)
+        total_sum += item
+    return total_sum
   
   
+#Lambda
+
+x = lambda a: a + 10
+print(x(5))
+
+
+#using lambda in function
+
+def sum_array(arr):
+    return sum(map(lambda x: int(x), arr))
+  
+print(sum_array([1, '2', 3, '4']))
+
+operations = [
+    lambda x: x + 1,  
+    lambda x: x - 1,  
+    lambda x: x * 2,  
+    lambda x: x / 2   
+]
+
+number = 10
+
+results = [op(number) for op in operations]
+print(results)
+
+
+#List Comprehension
+
+#without List Comprehension
+
+fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
+newlist = []
+
+for x in fruits:
+  if "a" in x:
+    newlist.append(x)
+
+print(newlist)
+
+#with List Comprehension
+
+
+fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
+
+newlist = [x for x in fruits if "a" in x]
+
+print(newlist)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   
 #project with given recources
 """
