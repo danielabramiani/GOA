@@ -176,6 +176,75 @@ def pop_list(list):
 names = ["daniel", "davit", "nika", "dato"]
 pop_list(names)
 
+#print() Function
+
+
+
+
+
+x = ("apple", "banana", "cherry")
+print(x)
+
+def myfunction():
+  print(3+3)
+
+
+
+
+
+
+
+
+
+
+#return statement
+
+def myfunction():
+  return 3+3
+
+print(myfunction())
+
+
+
+
+
+
+
+
+#sorted() Function
+
+a = ("b", "g", "a", "d", "f", "c", "h", "e")
+x = sorted(a)
+print(x)
+
+def switch_gravity(d, arr):
+    if d == 'R':
+        return sorted(arr)
+    elif d == 'L':
+        return sorted(arr, reverse=True)
+
+print(switch_gravity('R', [3, 2, 1, 2]))
+
+
+#List count() Method
+
+fruits = ['apple', 'banana', 'cherry']
+
+x = fruits.count("cherry")
+
+def well(x):
+    good_count = x.count('good')
+    
+    if good_count == 0:
+        return 'Fail!'
+    elif good_count <= 2:
+        return 'Publish!'
+    else:
+        return 'I smell a series!'
+
+
+
+
 #for ... in
 
 fruits = ["apple", "banana", "cherry"]
@@ -352,6 +421,28 @@ def is_not_even(number):
 
 print(is_not_even(4))
   
+#sorted() Function
+
+a = ("b", "g", "a", "d", "f", "c", "h", "e")
+x = sorted(a)
+print(x)
+
+#using in function
+def myfunc(n):
+  return abs(10-n)
+
+a = (5, 3, 1, 11, 2, 12, 17)
+x = sorted(a, key=myfunc)
+print(x)
+
+
+
+
+
+
+
+
+
 
 #isinstance() Function
 
@@ -418,6 +509,18 @@ newlist = [x for x in fruits if "a" in x]
 print(newlist)
 
 
+#without List Comprehension2
+
+def powers_of_two(n):
+    result = []
+    for i in range(n + 1):
+        result.append(2 ** i)
+    return result
+
+#with List Comprehension2
+
+def powers_of_two(n):
+    return [2 ** i for i in range(n + 1)]
 
 
 
