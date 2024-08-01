@@ -1,3 +1,5 @@
+#list
+
 brands = ["Honda", "Toyota", "BMW", "Mercedes"]
 
 print(brands[-3:-1])
@@ -6,6 +8,19 @@ print(brands[-3:-1])
 animals = ['cat', 'dog', 'bird']
 
 print(animals[1])
+
+
+#functions
+
+def my_function():
+  print("Hello from a function")
+
+my_function()
+
+def my_function(fname):
+  print("Hello, " + fname)
+
+my_function("Daniel")
 
 #strings Slicing
 
@@ -486,6 +501,24 @@ results = [op(number) for op in operations]
 print(results)
 
 
+#ord() Function
+
+#The ord() function returns the number representing the unicode code of a specified character.
+"""
+Syntax
+ord(character)
+"""
+
+"""
+Parameter Values
+Parameter - Description
+character - String, any character
+"""
+x = ord("h")
+
+print(x)
+#Return the integer that represents the character "h":
+
 #List Comprehension
 
 #without List Comprehension
@@ -526,12 +559,100 @@ def powers_of_two(n):
 
 
 
+#Classes and Objects
+
+class MyClass:
+  x = 5
+
+print(MyClass)
+
+
+
+#Create a class named Person, use the __init__() function to assign values for name and age:
 
 
 
 
+class Person:
+  def __init__(self, name, age):
+    self.name = name
+    self.age = age
+
+p1 = Person("John", 36)
+
+print(p1.name)
+print(p1.age)
 
 
+
+
+"""
+The __str__() Function
+The __str__() function controls what should be returned when the class object is represented as a string.
+
+If the __str__() function is not set, the string representation of the object is returned:
+"""
+
+"""
+The __init__() Function
+The examples above are classes and objects in their simplest form, and are not really useful in real life applications.
+
+To understand the meaning of classes we have to understand the built-in __init__() function.
+
+All classes have a function called __init__(), which is always executed when the class is being initiated.
+
+Use the __init__() function to assign values to object properties, or other operations that are necessary to do when the object is being created:
+
+The self Parameter
+The self parameter is a reference to the current instance of the class, and is used to access variables that belongs to the class.
+
+It does not have to be named self , you can call it whatever you like, but it has to be the first parameter of any function in the class:
+"""
+
+class Person:
+  def __init__(self, name, age):
+    self.name = name
+    self.age = age
+
+p1 = Person("John", 36)
+
+print(p1)
+
+
+#codewars
+
+class Ship:
+    def __init__(self, draft, crew):
+        self.draft = draft
+        self.crew = crew
+    
+    def is_worth_it(self):
+        crew_weight = self.crew * 1.5
+        effective_draft = self.draft - crew_weight
+        return effective_draft > 20
+
+
+
+class Person:
+  def __init__(mysillyobject, name, age):
+    mysillyobject.name = name
+    mysillyobject.age = age
+
+  def myfunc(abc):
+    print("Hello my name is " + abc.name)
+
+p1 = Person("John", 36)
+p1.myfunc()
+
+
+#codewars
+
+import random
+
+class Ghost:
+    def __init__(self):
+        colors = ["white", "yellow", "purple", "red"]
+        self.color = random.choice(colors)
 
 
   
@@ -826,3 +947,4 @@ def main5():
 
 main5()
 """
+
