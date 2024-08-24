@@ -13,9 +13,8 @@ def divide(x, y):
     else:
         return "Error: Division by zero."
 
-def main5():
+def main():
     while True:
-        print("Basic Calculator")
         print("1. Add")
         print("2. Subtract")
         print("3. Multiply")
@@ -42,4 +41,4 @@ def main5():
         else:
             print("Invalid choice. Please try again.")
 
-main5()
+main()

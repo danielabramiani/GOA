@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-box" id="chat-box"></div>
+        <input type="text" id="user-input" placeholder="Type your message here..." class="user-input">
+        <div class="button-container">
+            <button onclick="sendMessage()" class="button1">Send</button>
+            <button onclick="logout()" class="button1">Logout</button>
+            <button onclick="displayHelp()" class="button1">Commands</button>
+            <button onclick="showHistory()" class="button1">History</button>
+        </div>
+    </div>
+    <footer>
+        <p>Created by Daniel Abramiani - Bot Version 2.0</p>
+        <a href="https://facebook.com" class="social-link">Facebook</a>
+        <a href="https://twitter.com" class="social-link">Twitter</a>
+        <a href="https://instagram.com" class="social-link">Instagram</a>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

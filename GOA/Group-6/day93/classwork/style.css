@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #03441a;
+}
+
+.box-container {
+    width: 500px;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+    background-color: #282928;
+}
+
+.box {
+    width: 70px;
+    height: 70px;
+    background-color: #e8e8e8;
+    position: absolute;
+}
+
+

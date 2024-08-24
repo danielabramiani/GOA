@@ -19,7 +19,7 @@ def remove_grade(name):
 
 def main():
     while True:
-        print("\nStudent Grades Tracker")
+        print("Student Grades Tracker")
         print("1. Add/Update Grade")
         print("2. View Grades")
         print("3. Remove Grade")

@@ -30,7 +30,6 @@ def complete_task(index):
 
 def main():
     while True:
-        print("Task List Manager")
         print("1. Add Task")
         print("2. View Tasks")
         print("3. Remove Task")

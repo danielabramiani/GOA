@@ -1,0 +1,61 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+}
+
+canvas {
+    border: 2px solid #fff;
+    border-radius: 10px;
+    background: radial-gradient(circle, #3160b3, #1e3c72);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    margin-top: 20px;
+}
+
+audio {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    padding: 5px;
+    border: 1px solid #fff;
+}
+
+.scoreboard {
+    position: absolute;
+    top: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    color: #fff;
+    font-size: 24px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.scoreboard .player, .scoreboard .computer {
+    display: flex;
+    align-items: center;
+}
+
+.scoreboard .player::before, .scoreboard .computer::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin-right: 10px;
+}
+
+.scoreboard .player::before {
+    background-color: #f74b17;
+}
+
+.scoreboard .computer::before {
+    background-color: #3f51b5;
+}
