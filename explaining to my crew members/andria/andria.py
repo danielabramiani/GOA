@@ -15,3 +15,9 @@
 #     new.append(squared_number)
     
 # print(new)
+
+name = "Andria"
+hobby = "Art"
+academy = "GOAL ORIENTED ACADEMY"
+
+print(list(name + hobby + academy))
