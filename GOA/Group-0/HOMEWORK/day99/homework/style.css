@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--family);
+    color: var(--Slate-900);
+}
+
+:root{
+    --White: hsl(0, 0%, 100%);
+    --Slate-100: hsl(202, 86%, 94%);
+    --Slate-300: hsl(203, 41%, 72%);
+    --Slate-500: hsl(200, 26%, 54%);
+    --Slate-700: hsl(200, 24%, 40%);
+    --Slate-900: hsl(202, 55%, 16%);
+    --Lime: hsl(61, 70%, 52%);
+    --Red: hsl(4, 69%, 50%);
+    --family: "Plus Jakarta Sans"
+}
+
+main{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--Slate-300);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-div{
+    width: 45%;
+    background-color: var(--White);
+    display: flex;
+    justify-content: space-between;
+    border-radius: 15px;
+    border: none;
+    height: 40%;
+}
+
+#part1{
+    width: 55%;
+}
+
+#form1{
+    width: 100%;
+}
+
+#header-div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5%;
+}
+#header-div, #form1 > div{
+    padding: 15px 0 15px 10%;
+    max-width: 80%;
+}
+
+h1{
+    font-size: 24px;
+}
+input{
+    height: 40px;
+    border: none;
+    font-weight: bold;
+    overflow: hidden;
+}
+input:focus {
+    outline: none;
+    border: none;
+}
+#header-div span{
+    text-decoration: underline;
+    color: gray;
+    cursor: pointer;
+}
+
+#container1{
+    margin-top: 10px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    border: 1px solid var(--Slate-700);
+    border-radius: 5px;
+}
+#input1{
+    width: 100%;
+    padding-left: 10px;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+#container1 span{
+    background-color: var(--Slate-300);
+    padding: 10px;
+    font-weight: bold;
+}
+
+#input-div2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container3{
+    border: 1px solid var(--Slate-700);
+    border-radius: 5px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container3 input{
+    padding-left: 10px;
+}
+.container2 span{
+    background-color: var(--Slate-300);
+    padding: 10px;
+    font-weight: bold;
+}
+
+#input-div3 label{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    border: 1px solid var(--Slate-700);
+    padding-left: 15px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+#input-div3 span{
+    padding-left: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+button{
+    margin: 50px 0 50px 10%;
+    font-size: 26px;
+    padding: 20px 30px 20px 20px;
+    border-radius: 40px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: var(--Lime);
+}
+button i {
+    padding: 0 20px 0 30px;
+}
+
+#part2{
+    background-color: var(--Slate-900);
+    height: 100%;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+h2, #part2 p{
+    color: var(--White);
+    max-width: 70%;
+    text-align: center;
+}
+h2{
+    padding: 50px;
+    font-size: 30px;
+}

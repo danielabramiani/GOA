@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frontend Mentor | Mortgage repayment calculator</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <main>
+    <div id="main-div">
+      <div id="part1">
+        <div id="header-div">
+          <h1>Mortgage Calculator</h1>
+          <span id="clear-all">Clear All</span>
+        </div>
+
+        <form id="form1">
+          <div id="input-div1">
+            <label for="input1">Mortgage Amount</label>
+            <div id="container1">
+              <span>£</span>
+              <input type="number" name="amount" id="input1" min="0" required>
+            </div>
+          </div>
+
+          <div id="input-div2">
+            <div class="container2">
+              <label for="input2">Mortgage Term</label>
+              <div class="container3">
+                <input type="number" name="years" id="input2" min="0" required>
+                <span>years</span>
+              </div>
+            </div>
+            <div class="container2">
+              <label for="input3">Interest Rate</label>
+              <div class="container3">
+                <input type="number" name="rate" id="input3" min="0" required>
+                <span>%</span>
+              </div>
+            </div>
+          </div>
+
+          <div id="input-div3">
+            <p>Mortgage Type</p>
+            <label>
+              <input type="radio" name="repayment" checked><span>Repayment</span>
+            </label><br>
+            <label>
+              <input type="radio" name="repayment"><span>Interest Only</span>
+            </label>
+          </div>
+
+          <button type="submit">
+            <i class="fa-solid fa-calculator"></i>
+            <span>Calculate Repayments</span>
+          </button>
+        </form>
+      </div>
+
+      <div id="part2">
+        <h2>Monthly Repayment:</h2>
+        <p id="monthly-repayment">£0.00</p>
+        <h2>Total Repayment:</h2>
+        <p id="total-repayment">£0.00</p>
+      </div>
+    </div>
+  </main>
+
+  <script src="./script.js"> </script>
+</body>
+</html>

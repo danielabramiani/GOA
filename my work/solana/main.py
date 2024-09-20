@@ -94,5 +94,4 @@ async def execute_back_run(client, keypair, log):
     print(f"Back-run transaction response: {response}")
 
 # Run the asyncio main loop
-if __name__ == "__main__":
-    asyncio.run(main())
+asyncio.run(main())
