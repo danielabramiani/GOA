@@ -27,3 +27,8 @@ def analyze_number(num: int) -> str:
             return "negative"
         else:
             return "negative odd"
+        
+def process_values(a, b):
+    print(abs(a) + abs(b))
+    
+print(process_values(-10, 5))

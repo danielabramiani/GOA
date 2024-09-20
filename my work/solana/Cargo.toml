@@ -1,0 +1,12 @@
+[package]
+name = "solana_mev_sandwich_bot"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tokio = { version = "1", features = ["full"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+solana-client = "2.0"
+spl-token = "3.0"
+futures = "0.3"

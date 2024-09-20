@@ -1,0 +1,153 @@
+body {
+    min-height: 100vh;
+    color: #000000;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    line-height: 1.3;
+    position: relative;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #e0e0e0;
+    
+}
+
+ul {
+    list-style-type: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000000;
+}
+
+
+
+body .overlay {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all .3s linear;
+}
+
+body.nav-open .overlay {
+    display: initial;
+    opacity: 1;
+}
+
+header {
+    min-height: 75px;
+    padding: 1.3rem 1rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+header .menu {
+    position: fixed;
+    top: 1.3rem;
+    right: 1rem;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.menu .close-menu {
+    display: none;
+}
+
+header.open .open-menu {
+    display: none;
+}
+
+header.open .close-menu {
+    display: initial;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 65vw;
+    height: 100vh;
+    transform: translateX(100%);
+    transition: all .3s ease-in;
+    display: flex;
+    text-align: left;
+    z-index: 1;
+}
+
+header.open nav {
+    transform: translateX(0%);
+}
+
+nav .nav-links {
+    margin-top: 75px;
+    flex: 1;
+}
+
+.nav-links .nav-link {
+    cursor: pointer;
+    position: relative;
+}
+
+.nav-link > a {
+    width: 100%;
+    padding: .5rem 1.5rem;
+    display: block;
+    transition: all .3s ease-in;
+}
+
+.nav-link > a:hover {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.nav-link .dropdown-list {
+    display: none;
+    padding: .5rem 1.5rem;
+    overflow-y: hidden;
+}
+
+.nav-link.link-open .dropdown-list {
+    display: block;
+}
+
+.dropdown-list .dropdown-link a {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: .5rem 1.5rem;
+}
+
+.dropdown-link a:hover {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.nav-link a span {
+    margin-right: .75rem;
+}
+
+.nav-link .arrow-up {
+    display: none;
+}
+
+
+.nav-link.link-open .arrow-up {
+    display: initial;
+}
+
+.nav-link.link-open .arrow-down {
+    display: none;
+}
+
+nav .registration {
+    display: none;
+}
