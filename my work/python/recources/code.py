@@ -772,3 +772,16 @@ def permute(s, nothing = ""):
             permute(together, letter + nothing)
             
 print(permute("ABC", ""))
+
+#list comprehanssion
+doubles = [x * 2 for x in range(1,11) ]
+# for x in range(1,11):
+#     doubles.append(x * 2)
+
+# print(doubles)
+print(doubles)
+
+
+if_num = [x * 2 for x in range(1, 11) if x % 2 == 0]
+
+print(if_num)
