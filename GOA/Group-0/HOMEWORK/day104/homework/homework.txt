@@ -1,0 +1,7 @@
+What is node js used for?
+
+Developers use Node. js to create server-side web applications, and it is perfect for data-intensive 
+applications since it uses an asynchronous, event-driven model. Now that we know what is Node, let's look at why it is so prevalent in web development.
+
+what is node js?
+
