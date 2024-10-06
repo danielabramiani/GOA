@@ -1,0 +1,16 @@
+What is parcel?
+
+A parcel is a part of something, or a division. It can also be a package or a collection of things wrapped together. 
+Parcel comes from the Anglo-Norman word for "part." 
+Often when we use parcel to mean a part, we're talking about land, which is divided into definable (and purchasable) tracts.
+
+why do we need parcel?
+
+Parcel automatically tracks all of the files, configuration, 
+plugins, and dev dependencies that are involved in your build, and granularly invalidates the 
+cache when something changes. It integrates with low-level operating 
+system APIs to determine what files have changed in milliseconds, no matter the project size.
+
+how to use parcel?
+
+https://en.parceljs.org/getting_started.html

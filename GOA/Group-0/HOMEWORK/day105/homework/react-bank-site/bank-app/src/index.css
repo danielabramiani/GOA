@@ -1,0 +1,38 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+header {
+  background: #007BFF;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+nav {
+  background: #333;
+  color: white;
+  padding: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav li {
+  cursor: pointer;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+input {
+  margin: 5px 0;
+  padding: 10px;
+}
