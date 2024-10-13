@@ -1,6 +1,6 @@
 function joinArr(arr){
-    for(let i = 0;i < arr.length;i++){
-        return " ".join(arr[i]); 
+    for(let i = 0; i < arr.length; i++){
+        return (arr[i].join); 
     }
 }
 

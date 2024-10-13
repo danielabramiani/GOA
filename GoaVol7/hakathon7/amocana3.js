@@ -5,11 +5,8 @@
 //   სიგრძე კენტია, მეორე ნახევრის სიგრძე უნდა აღემატებოდეს პირველისას. 
 // f("gamarjoba") = "rjobagamar", ახსნა: მეორე ნახევარს მიეწერა პირველი ნახევარი
 
-function word(string) {
-    for(let i = 0; i < string.length; i++){
-        return i[string[5]]
-    }
-    return string + 
+function reverseString(string){
+    return string.split("").reverse().join("");
 }
 
-console.log(word("gamarjoba"))
+console.log(reverseString("gamarjoba"))
