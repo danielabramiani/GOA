@@ -1,0 +1,17 @@
+Imperative programming focuses on how to achieve a goal by explicitly detailing the steps to take.
+
+Step-by-Step Instructions: You write code that specifies the exact sequence of operations to perform.
+State Management: You often manipulate variables and manage states directly.
+Control Structures: Heavy use of loops, conditionals, and other control structures to dictate flow.
+Procedural: Typically involves writing procedures or functions that contain these steps.
+Examples: C, Java, Python (can be both), and assembly languages.
+
+
+
+Declarative programming focuses on what the goal is, without explicitly defining the steps to achieve it.
+Characteristics:
+
+Expressive: You describe the desired result rather than the steps to get there.
+Abstract: Higher level of abstraction compared to imperative, focusing on what needs to be done rather than how.
+Less State Management: Minimizes explicit state manipulation and side effects.
+Examples: SQL, HTML, CSS, functional programming languages like Haskell, and libraries like React for JavaScript.

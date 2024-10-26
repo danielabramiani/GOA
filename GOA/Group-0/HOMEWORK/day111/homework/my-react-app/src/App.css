@@ -1,0 +1,26 @@
+.app {
+  max-width: 400px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+input {
+  padding: 10px;
+  margin-right: 10px;
+  width: 70%;
+}
+
+button {
+  padding: 10px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
