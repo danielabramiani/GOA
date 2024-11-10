@@ -1,26 +1,54 @@
 .app {
   text-align: center;
-  padding: 1rem;
+  padding: 2rem;
+  background-color: #f0f4f8;
+  font-family: Arial, sans-serif;
+  color: #333;
 }
 
 input {
-  padding: 0.5rem;
-  margin-bottom: 1rem;
+  padding: 0.75rem;
+  margin-bottom: 1.5rem;
   width: 80%;
   max-width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  border-color: #007bff;
+}
+
+button {
+  padding: 0.75rem 1.5rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
 }
 
 .weather, .forecast {
   margin: 1rem auto;
-  padding: 1rem;
+  padding: 1.5rem;
+  background-color: white;
   border: 1px solid #ddd;
-  border-radius: 5px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   max-width: 300px;
 }
 
 .forecast-day {
   margin-top: 1rem;
-  padding: 0.5rem;
+  padding: 0.75rem;
   border-top: 1px solid #ddd;
 }
 
@@ -28,4 +56,10 @@ input {
   input, .weather, .forecast {
     width: 100%;
   }
+}
+
+body{
+  background-color: #333;
+  color: #ffffff;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }

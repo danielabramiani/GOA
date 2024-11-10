@@ -1,18 +1,27 @@
 import { useState } from 'react';
 import './App.css';
-import React from 'react';
-import Weather from 'src/Weather';
+import Weather from './Weather';
+
 function MainApp() {
   const [city, setCity] = useState('London');
-  const [inputCity, setInputCIty] = useState('')
+  const [inputCity, setInputCity] = useState('');
+
   const handleSearch = () => {
-    setCity(inputCity);
+    if (inputCity.trim()) {
+      setCity(inputCity.trim());
+      setInputCity('');
+    }
   };
-  
+
   return (
-    <div className ="main">
+    <div className="main">
       <h1>Weather App</h1>
-      <input type="text" placeholder='Enter city you want to check weather' value={inputCity} onChange={(e) => setInputCIty(e.target.value)} />
+      <input
+        type="text"
+        placeholder="Enter city you want to check weather"
+        value={inputCity}
+        onChange={(e) => setInputCity(e.target.value)}
+      />
       <button onClick={handleSearch}>Search</button>
       <Weather city={city} />
     </div>
