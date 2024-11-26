@@ -1,0 +1,74 @@
+cw
+1)"Life is full of unexpected twists and turns, and while we may not have control 
+over everything that happens to us, we do have control over how we react. Resilience isn't about 
+avoiding obstacles; it's about learning how to navigate them, growing 
+stronger with every step. Embrace the challenges, learn from the failures, and never be afraid to 
+take the first step, no matter how uncertain the path may seem."
+
+2)"In a world that constantly tells you who to be, it takes courage to stay true to yourself. 
+Authenticity is not about being perfect; it’s about being real, acknowledging your strengths 
+and weaknesses, and living your life unapologetically. The more you embrace your true self,
+ the more you attract people who resonate with you and experiences that truly fulfill you."
+
+3)"Creativity is not a talent reserved for a select few, but a skill that everyone can develop. 
+It thrives on curiosity, patience, and a willingness to see things differently. Allow yourself
+ the freedom to make mistakes, to explore without limits, and to be inspired by the world around you. 
+ Often, the greatest ideas come from the most unexpected sources."
+
+1)„ცხოვრება სავსეა მოულოდნელი შემოტრიალებებითა და მოხვევებით, და მიუხედავად იმისა, რომ ყველაფერი, 
+რაც ჩვენ თავს ხდება, ვერ ვაკონტროლებთ, შეგვიძლია ვაკონტროლოთ, როგორ ვრეაგირებთ ამაზე. გამძლეობა 
+არ ნიშნავს დაბრკოლებების თავიდან აცილებას; ეს ნიშნავს მათი გადალახვის სწავლას და თითოეულ
+ ნაბიჯთან ერთად გაძლიერებას. მიიღე გამოწვევები, ისწავლე მარცხისგან და არასოდეს შეგეშინდეს პირველი ნაბიჯის 
+ გადადგმის, მიუხედავად იმისა, რამდენად გაურკვეველი შეიძლება ჩანდეს გზა.“
+
+2)„მსოფლიოში, რომელიც მუდმივად გეუბნება, ვინ უნდა იყო, საჭიროებს სიმამაცეს, რომ იყო ნამდვილი საკუთარ თავთან. 
+ნამდვილობა არ ნიშნავს სრულყოფილებას; ეს ნიშნავს იყო ნამდვილი, აღიარო შენი სიძლიერე და სისუსტეები და იცხოვრო 
+შენი ცხოვრება თავდაჯერებულად. რაც უფრო მეტად მიიღებ საკუთარ თავს, მით უფრო მეტად მოიზიდავ ადამიანებს, რომლებიც
+ შენს მსგავსად აზროვნებენ და გამოცდილებებს, რომლებიც ნამდვილად გაგახარებს.“
+
+3)„შემოქმედება არ არის უნარი, რომელიც მხოლოდ მცირერიცხოვანთა ხვედრია, არამედ უნარია,
+ რომლის განვითარებაც ყველას შეუძლია. ის ყვავის ცნობისმოყვარეობაზე, მოთმინებაზე და სურვილზე, 
+ რომ სხვაგვარად დაინახო მოვლენები. მისცე საკუთარ თავს უფლება, რომ შეცდომები დაუშვა, გამოიკვლიო 
+ შეზღუდვების გარეშე და იყო შთაგონებული ირგვლივ სამყაროთი. ხშირად, ყველაზე დიდი იდეები მოდიან ყველაზე მოულოდნელი წყაროებიდან.“
+
+2)https://www.youtube.com/watch?v=xoykZA8ZDIo
+
+start
+https://www.codewars.com/kata/57814d79a56c88e3e0000786
+https://www.codewars.com/kata/56b5afb4ed1f6d5fb0000991
+https://www.codewars.com/kata/525caa5c1bf619d28c000335
+
+new words
+
+encryption - დაშიფვრა
+decryption - გაშიფვრა
+chunks - ნაწილები
+substring - ქვესტრიქონი
+initial - საწყისი
+something - რამე
+unexpected - მოულოდნელი
+twists - მოხვევები / შემოტრიალებები
+may - შეიძლება
+happens - ხდება
+over - ზედმეტი / გადამეტება / მორჩა (კონტექსტის მიხედვით)
+Resilience - გამძლეობა
+isn't - არ არის
+avoiding - თავიდან აცილება
+obstacles - დაბრკოლებები
+them - ისინი / მათ
+growing - ზრდა / განვითარება
+Embrace - მიიღე / ჩაეხუტე (კონტექსტის მიხედვით)
+failures - მარცხები / წარუმატებლობები
+afraid - შეშინებული
+matter - მნიშვნელობა / საკითხი
+uncertain - გაურკვეველი
+path - გზა
+seem - ჩანს / ჩანს როგორც
+constantly - მუდმივად
+courage - გამბედაობა
+stay - დარჩენა
+authenticity - ავთენტურობა
+being - ყოფნა
+acknowledging - აღიარება
+weaknesses - სისუსტეები
+unapologetically - უკომპრომისოდ, დაუბოდიშებლად

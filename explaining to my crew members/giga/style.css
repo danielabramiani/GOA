@@ -1,0 +1,12 @@
+.container{
+    background-color: blueviolet;
+    transition: all 0.5s;
+    width: 400px;
+    height: 400px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: aliceblue;
+    font-size: 100px;
+}
+.container:hover{
+    transform: scale(1.03);
+}

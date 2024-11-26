@@ -1,0 +1,207 @@
+:root {
+    --header-height: 3.5rem;
+  
+    /*========== My Custom Colors ==========*/
+    /*Color mode HSL(hue, saturation, lightness)*/
+    --first-color: hsl(219, 69%, 56%);
+    --first-color-alt: hsl(219, 69%, 52%);
+    --title-color: hsl(219, 8%, 95%);
+    --text-color: hsl(219, 8%, 75%);
+    --text-color-light: hsl(219, 4%, 55%);
+    --white-color: #fff;
+    /* --body-color: hsl(219, 4%, 4%); */
+    
+    --body-color: hsl(283, 89%, 7%);
+    --container-color: hsl(219, 4%, 7%);
+  
+    /*========== My Custom Font and typography ==========*/
+    /*.5rem = 8px | 1rem = 16px ...*/
+    --body-font: 'Exo', sans-serif;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+    --smaller-font-size: .75rem;
+  
+    /*========== Font weight ==========*/
+    --font-medium: 500;
+    --font-semi-bold: 600;
+  
+    /*========== z index ==========*/
+    --z-tooltip: 10;
+    --z-fixed: 100;
+  }
+  
+  @media screen and (min-width: 968px) {
+    :root {
+      --h1-font-size: 2.25rem;
+      --h2-font-size: 1.5rem;
+      --h3-font-size: 1.25rem;
+      --normal-font-size: 1rem;
+      --small-font-size: .875rem;
+      --smaller-font-size: .813rem;
+    }
+  }
+  
+
+/* ========== General Styles ========== */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    background-color: var(--body-color);
+    color: var(--text-color);
+  }
+  
+  h1, h2, h3 {
+    color: var(--title-color);
+    font-weight: var(--font-semi-bold);
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* ========== Header & Navbar ========== */
+  .header {
+    width: 100%;
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: var(--z-fixed);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1rem 0;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+  }
+  
+  .nav__logo {
+    display: flex;
+    align-items: center;
+    font-weight: var(--font-medium);
+    font-size: var(--h2-font-size);
+    color: var(--title-color);
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .nav__logo:hover {
+    color: var(--first-color);
+  }
+  
+  .nav__logo i {
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+  }
+  
+  .nav__menu {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav__list {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+  }
+  
+  .nav__link {
+    text-transform: uppercase;
+    color: var(--title-color);
+    font-size: var(--h2-font-size);
+    font-weight: var(--font-medium);
+    padding: 0.5rem;
+    transition: color 0.3s ease;
+  }
+  
+  .nav__link:hover {
+    color: var(--first-color);
+  }
+  
+  /* ========== Responsive Styles for Horizontal Layout ========== */
+  @media screen and (max-width: 768px) {
+    .nav {
+      flex-wrap: nowrap; /* Keep the navbar items in a horizontal line */
+      justify-content: space-between;
+    }
+  
+    .nav__menu {
+      width: auto;
+    }
+  
+    .nav__list {
+      display: flex;
+      gap: 2rem;
+      margin-top: 0;
+      justify-content: center;
+    }
+  
+    .nav__link {
+      font-size: var(--h3-font-size);
+      color: var(--white-color);
+    }
+  
+    .nav__link:hover {
+      color: var(--first-color);
+    }
+  
+    .header {
+      padding: 1rem;
+    }
+  }
+  
+  /* ========== Transition Effects ========== */
+  .nav__logo,
+  .nav__link {
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .nav__logo:hover {
+    transform: scale(1.05);
+  }
+  
+  .nav__link:hover {
+    transform: scale(1.05);
+  }
+  
+  /* ========== Background Color on Scroll ========== */
+  .scroll-header {
+    background-color: var(--body-color);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* ========== Button Animation ========== */
+  @keyframes button {
+    0% {
+      box-shadow: 0 0 12px hsl(158, 98%, 43%);
+    }
+    50% {
+      box-shadow: 0 0 24px hsl(158, 98%, 43%);
+    }
+  }
+  

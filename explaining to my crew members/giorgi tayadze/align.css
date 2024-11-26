@@ -1,0 +1,19 @@
+body{
+    background-color: rgb(44, 44, 44);
+}
+
+h1{
+    color: rgb(80, 80, 237);
+    box-shadow: 2px 3px 5px 6px;
+    text-align: center;
+    transition: all 0.7s;
+}
+h1:hover{
+    transform: scale(1.02);
+}
+
+a{
+    color: rgb(255, 255, 255);
+    margin: 275px;
+    font-size: larger;
+}

@@ -1,0 +1,5 @@
+დავალებები ფუნქციის წარმადობათა შედარებებსა და Proving BIG-O (დიდი O-ს დამტკიცებაზე)
+
+Ian Parberry - Problems on algorithms-Prentice Hall
+
+127-128, 31pg:41-42epg

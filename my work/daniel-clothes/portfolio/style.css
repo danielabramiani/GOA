@@ -1,0 +1,744 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=MuseoModerno:ital,wght@0,100;0,200;0,500;0,700;1,300&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo&family=Koulen&family=Staatliches&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'MuseoModerno';
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;
+    font-weight: 500;
+    -webkit-box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+.nv-1,nav{
+    z-index: 2;
+    width: 100%;
+    height: 90px;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    text-decoration: none;
+}
+nav a{
+    color: white;
+    border-bottom: 1px solid transparent;
+    transition: 0.25s;
+    transition: 0.25s;
+}
+nav a:hover{
+    border-bottom: 1px solid white;
+}
+nav ul{
+    display: flex;
+    gap: 20px;
+    font-size: 30px;
+}
+nav button{
+    font-weight: 300;
+    font-style: italic;
+    font-size: 30px;
+    padding: 7px;
+    border: 1px solid white;
+    border-radius: 0;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    transition: 0.25s;
+}
+nav button:hover{
+    background-color: white;
+    color: black;
+    
+}
+nav #logo{
+    font-family: 'MuseoModerno';
+    font-size: 40px;
+    font-weight: 700;
+}
+nav #menu{
+    border: none;
+    font-size: 30px;
+    font-style:normal;
+    font-family: Arial, Helvetica, sans-serif;
+    display: none;
+}
+nav #menu:hover{
+    background-color: transparent;
+    color: white;
+    transform: rotate(180deg);
+}
+@media (max-width: 1000px){
+    nav{
+        justify-content: space-between;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
+@media (max-width: 900px){
+    nav ul{
+        font-size: 20px;
+    }
+    nav #logo{
+        font-size: 40px;
+    }
+    nav button{
+        font-size: 20px;
+    }
+}
+@media (max-width: 650px){
+    nav ul{
+        font-size: 18px;
+        gap: 10px;
+    }
+    nav #logo{
+        font-size: 30px;
+    }
+    nav button{
+        font-size: 18px;
+    }
+}
+@media (max-width: 550px){
+    nav ul{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+    }
+    nav ul li a{
+        border-bottom: none;
+    }
+    nav #menu{
+        display: block;
+    }
+    nav ul{
+        z-index: -1;
+        position: absolute;
+        right: 0;
+        width: 100%;
+        height: 10vh;
+        top: 100%;
+        background-color: #F4F4EF;
+        left: -100%;
+        transition: all 0.5s;
+    }
+    nav ul a{
+        color: black;
+    }
+    .nav.active{
+        left: 0;
+        display: flex;
+    }
+    nav.active{
+        background-color: #060918;
+    }
+    body.active{
+        overflow: hidden;
+    }
+}
+@media (max-width: 430px){
+    nav #logo{
+        font-size: 20px;
+    }
+    nav button{
+        font-size: 15px;
+    }
+    #menu{
+        font-size: 15px;
+    }
+}
+nav{
+    background-color: transparent;
+    transition: 0.5s;
+}
+nav.scrolled{
+    background-color: #20232A;
+}
+.hero{
+    width: 100%;
+    height: 100vh;
+    color: white;
+    background-color: #A01D26;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.hero h1{
+    font-family: 'Bebas Neue';
+    letter-spacing: 10px;
+    width: 1000px;
+    font-size: 100px;
+    font-weight: 700;
+}
+.hero button{
+    font-size: 30px;
+    font-weight: 200;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid white;
+    color: #A01D26;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.hero button:hover{
+    letter-spacing: 3px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color:transparent;
+    color: white;
+}
+@media (max-width: 1000px){
+    .hero h1{
+        width: 700px;
+        font-size: 70px;
+    }
+}
+@media (max-width: 700px){
+    .hero h1{
+        width: 600px;
+        font-size: 50px;
+    }
+    .hero button{
+        font-size: 25px;
+    }
+}
+@media (max-width: 700px){
+    .hero h1{
+        width: 100%;
+        font-size: 40px;
+    }
+    .hero button{
+        font-size: 20px;
+    }
+    .hero{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+.about{
+    width: 100%;
+    height: 90vh;
+    background-color: #F4F4EF;
+    display: flex;
+}
+.about-photo{
+    width: 50%;
+    height: 100%;
+    background-image: url('/Photos/me1.jpg');
+    background-size: cover;
+    background-position: top;
+}
+.about-info{
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    padding: 0 30px;
+}
+.about-info h2{
+    color: #A01D26;
+    font-size: 30px;
+    letter-spacing: 5px;
+    font-family: 'Bebas Neue';
+}
+.about-info h1{
+    font-size: 90px;
+}
+.about-info p{
+    font-weight: 200;
+    font-size: 20px;
+}
+@media (max-width:960px){
+    .about-info h1{
+        font-size: 50px;
+    }
+}
+@media (max-width:600px){
+    .about{
+        flex-direction: column;
+    }
+    .about-info{
+        width: 100%;
+        height: 50%;
+    }
+    .about-photo{
+        width: 100%;
+        height: 50%;
+        background-position-y: -100px;
+    }
+}
+@media (max-width:400px){
+    .hero{
+        height: 100vh;
+    }
+    .about{
+        height: 100vh;
+    }
+    .about-info h1{
+        font-size: 30px;
+    }
+    .about-info p{
+        font-size: 18px;
+    }
+    .about-info h2{
+        font-size: 20px;
+    }
+}
+.work{
+    width: 100%;
+    height: 100%;
+    padding: 50px 0;
+    background-color: rgb(214, 189, 50);
+}
+.main_container{
+    width: 450px;
+    height: 550px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.image{
+    width: 100%;
+    height: 100%;
+    background-image: url('./Black\ Brown\ Vintage\ Initial\ Baroque\ Style\ Logo.png');
+    background-size: cover;
+    background-position: center;
+    transition: 0.5s;
+}
+.overlay{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.75);
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    display: flex;
+    flex-direction: column;
+    -webkit-justify-content: center;
+    -webkit-align-items: center;
+    -webkit-transition: 0.5s;
+    gap: 5px;
+    color: white;
+}
+.overlay p{
+    font-size: 30px;
+    color: #F4F4EF;
+    font-family: 'Bebas Neue';
+    letter-spacing: 4px;
+}
+.overlay h1{
+    font-size: 40px;
+}
+.overlay button{
+    padding: 10px;
+    font-size: 20px;
+    background-color: #F4F4EF;
+    border: 1px solid #F4F4EF;
+    font-weight: 200;
+    color: black;
+    cursor: pointer;
+}
+.overlay button:hover{
+    letter-spacing: 5px;
+    background-color: transparent;
+    color: #F4F4EF;
+}
+.overlay *{
+    opacity: 0;
+    -webkit-transition: 0.5s;
+}
+.main_container:hover .overlay *{
+    opacity: 1;
+}
+.main_container:hover .overlay{
+    height: 100%;
+}
+.main_container:hover .image{
+    -webkit-filter: blur(5px);
+    -webkit-transform: scale(1.1);
+}
+.line-work{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    -webkit-justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.work2 .image{
+    background-image: url('./Green\ and\ White\ Modern\ Car\ Rent\ Instagram\ Post.png');
+}
+.work3 .image{
+    background-image: url('./White\ Simple\ Entrepreneurship\ Logo\ \(2\).png');
+}
+.work4 .image{
+    background-image: url('./Photos/Black\ Gold\ White\ Modern\ Property\ Agency\ Logo.png');
+}
+.work{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    gap: 30px;
+}
+.header-work{
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.header-work p{
+    font-size: 40px;
+    font-family:'Bebas Neue';
+    letter-spacing: 2px;
+    color: #F4F4EF;
+}
+.header-work h1{
+    font-size: 80px;
+    font-family:'Bebas Neue';
+}
+.damateba{
+    display: flex;
+    gap: 50px;
+}
+@media (max-width:1500px){
+    .work{
+        height: 100%;
+        padding: 50px 0;
+    }
+    .line-work{
+        flex-direction: column;
+    }
+}
+@media(max-width: 1050px){
+    .damateba{
+        flex-direction: column;
+    }
+}
+@media (max-width: 460px){
+    .header-work h1{
+        font-size: 50px;
+    }
+    .header-work p{
+        font-size: 30px;
+    }
+    .main_container{
+        width: 400px;
+        height: 500px;
+    }
+}@media (max-width: 420px){
+    .main_container{
+        width: 300px;
+        height: 400px;
+    }
+    .overlay p{
+        font-size: 20px;
+    }
+    .overlay h1{
+        font-size: 30px;
+    }
+    .overlay button{
+        font-size: 18px;
+    }
+}
+.contact{
+    width: 100%;
+    height: 80vh;
+    background-color: #A01D26;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+.contact:hover{
+    background-color: #F4F4EF;
+}
+.contact form{
+    width: 75%;
+    height: 450px;
+    background-color: #20232A;
+    display: flex;
+    padding: 50px;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    border-radius: 20px;
+}
+.left-form{
+    color: white;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.left-form p:nth-child(1){
+    font-size: 25px;
+    letter-spacing: 2px;
+    font-family:'Bebas Neue';
+}
+.left-form h1{
+    font-size: 50px;
+    font-family:'Bebas Neue';
+}
+.right-form{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.input-sections button,textarea,input{
+    height: 50px;
+    width: 100%;
+    font-size: 15px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    transition: 0.5s;
+}
+.input-sections textarea,input{
+    padding: 10px;
+}
+.input-sections textarea{
+    resize: none;
+    height: 100px;
+}
+.input-sections textarea:hover,input:hover{
+    background-color: white;
+}
+.input-sections label{
+    font-size: 20px;
+    color: white;
+}
+.input-sections button:hover{
+    background-color: white;
+    width: 100%;
+    color: black;
+}
+.btn-sec button{
+    width: 40%;
+    height: 50px;
+    cursor: pointer;
+    transition: 1s;
+    font-size: 20px;
+}
+.btn-sec{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.input-sections{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+#bt{
+    color: #20232A;
+}
+.input-sections input:focus, textarea:focus{
+    outline: none;
+    background-color: white;
+    color: black;
+}
+@media (max-width: 1300px){
+    .contact{
+        height: 90vh;
+    }
+    .contact form{
+        flex-direction: column;
+        height: 80%;
+    }
+    .left-form{
+        text-align: center;
+    }
+    .left-form,.right-form{
+        width: 100%;
+        height: 100%;
+    }
+}
+@media (max-width: 670px){
+    .input-sections button{
+        font-size: 15px;
+        width: 120px;
+    }
+    .input-sections label{
+        font-size: 15px;
+    }
+    .left-form p{
+        font-size: 18px;
+    }
+    .left-form h1{
+        font-size: 40px;
+    }
+}
+@media (max-width: 560px){
+    .contact{
+        height: 100%;
+        background-color: #20232A;
+        box-shadow: none;
+    }
+    .contact form{
+        border-radius: 0;
+        padding: 10px;
+        width: 100%;
+        height: 100%;
+        box-shadow: none;
+    }
+    .contact form:hover{
+        scale: 1;
+    }
+    .right-form{
+        padding: 10px;
+    }
+    .input-sections button{
+        font-size: 15px;
+        width: 100%;
+    }
+    .input-sections label{
+        font-size: 15px;
+    }
+    .left-form p{
+        font-size: 20px;
+    }
+    .left-form h1{
+        font-size: 35px;
+    }
+}
+footer{
+    width: 100%;
+    height: 400px;
+    background-color: #F4F4EF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+}
+.top-footer{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.top-footer a{
+    color: #060918;
+    font-weight: 700;
+    font-size: 30px;
+    -webkit-transition: 0.5s;
+}
+.top-footer a:hover{
+    color:#A01D26;
+}
+.middle-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+}
+.middle-footer ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+.middle-footer ul li a{
+    color: #A01D26;
+    font-family:'Koulen';
+    letter-spacing: 2px;
+    font-size: 20px;
+    -webkit-transition: 0.5s;
+}
+.middle-footer ul li a::after{
+    content: '';
+    display: block;
+    transform: scaleX(0);
+    border-bottom: 1px solid rgb(0, 0, 0);
+    transition:  1s ease;
+    transform-origin: bottom;
+}
+.hr{
+    width: 70%;
+    height: 1px;
+}
+hr{
+    width: 100%;
+    border: 1px solid linear-gradient(to right, red, yellow);
+    border-radius: 100%;
+}
+.bottom-footer{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+}
+.bottom-footer p{ 
+    color: #A01D26;
+    font-family:'Staatliches';
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+.bottom-footer .socials{
+    display: flex;
+    gap: 10px;
+}
+.socials i{
+    font-size: 25px;
+}
+.socials a{
+    color:#060918;
+    -webkit-transition: 0.5s;
+}
+.socials a:hover{
+    color: #A01D26;
+}
+.middle-footer ul li a:hover{
+    color: #060918;
+}
+.middle-footer ul li a:hover::after{
+    transform: scaleX(1);
+}
+@media (max-width: 530px){
+    .top-footer a{
+        font-size: 25px;
+    }
+    .middle-footer ul li a{
+        font-size: 15px;
+    }
+    .bottom-footer .socials a{
+        font-size: 20px;
+    }
+}
+@media (max-width: 450px){
+    .top-footer{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    .middle-footer{
+        width: 100%;
+    }
+    .bottom-footer .socials a{
+        width: 100%;
+    }
+}
+footer{
+    overflow: hidden;
+}

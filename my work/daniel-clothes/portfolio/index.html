@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/site.webmanifest">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/ddac99b4fd.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <meta property="og:title" content="Luka Tskhvaradze's Portfolio" />
+    <meta property="og:description" content="Web Developer & Designer" />
+    <meta property="og:image" content="./Dark Desk Scene Flat Lay.jpg"/>
+    <title>Luka Tskhavaradze</title>
+</head>
+<body>
+    <div data-aos="fade-down"  data-aos-duration="1000" class="nv-1">
+        <nav>
+            <button id="menu">X</button>
+            <ul class="nav">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#work">Work</a></li>
+            </ul>
+            <a href="#" id="logo"><p>Luka Tskhvaradze</p></a>
+            <a href="#contact"><button>Contact Me</button></a>
+            <script>
+                but = document.querySelector("#menu");
+                but.onclick = function(){
+                    nav = document.querySelector(".nav");
+                    nav.classList.toggle("active");
+                    bd = document.querySelector("body");
+                    bd.classList.toggle("active");
+                    head = document.querySelector('nav');
+                    head.classList.toggle("active")
+                }
+    
+                document.addEventListener('scroll', () => {
+                    const header = document.querySelector('nav');
+    
+                    let raodenoba = window.screenY;
+    
+                    if(window.scrollY > 100){
+                        header.classList.add('scrolled');
+                    } else{
+                        header.classList.remove('scrolled');
+                    }
+                })
+                
+            </script>
+        </nav>
+    </div>
+    <div class="hero">
+        <div data-aos="fade-up"  data-aos-duration="1000">
+            <h1>Programming and Design from Future.</h1>
+            <br>
+            <a href="#about"><button class="dive">See More</button></a>
+            
+        </div>
+    </div>
+    <div class="about" id="about">
+        <div class="about-photo" data-aos="fade-right"  data-aos-duration="1000"></div>
+        <div class="about-info">
+            <h2 data-aos="fade-left"  data-aos-duration="1000">ABOUT ME</h2>
+            <h1 data-aos="fade-up"  data-aos-duration="1000">Workholic</h1>
+            <p data-aos="fade-right"  data-aos-duration="1000">I am Luka, a passionate freelancer bringing you programming and design from the future. My expertise is developing next-level websites and web applications including full frontend design.</p>
+        </div>
+    </div>
+    <div class="work" id="work">
+        <div class="header-work">
+            <p data-aos="fade-up"  data-aos-duration="1000">Work</p>
+            <h1 data-aos="fade-up"  data-aos-duration="1000">Dig Into My Universe</h1>
+        </div>
+        <div class="line-work">
+            <div class="damateba">
+                <div data-aos="fade-right"  data-aos-duration="1000">
+                    <div class="main_container work1">
+                        <div class="image"></div>
+                        <div class="overlay">
+                            <p>June 2023</p>
+                            <h1>Golden Lotus</h1>
+                            <p>Website & Design</p>
+                            <a href="./works/goldenlotus.html"><button>See More</button></a>
+                        </div>
+                    </div>
+                </div>  
+                <div data-aos="fade-left"  data-aos-duration="1000">
+                    <div class="main_container work2">
+                        <div class="image"></div>
+                        <div class="overlay">
+                            <p>May 2023</p>
+                            <h1>Lulini Transport</h1>
+                            <p>Company</p>
+                            <a href="./works/lulini.html"><button>See More</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="damateba">
+                <div data-aos="fade-right"  data-aos-duration="1000">
+                    <div class="main_container work3">
+                        <div class="image"></div>
+                        <div class="overlay">
+                            <p>July 2023</p>
+                            <h1>CodeGe</h1>
+                            <p>Company</p>
+                            <a href="./works/codege.html"><button>See More</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="fade-left"  data-aos-duration="1000">
+                    <div class="main_container work4">
+                        <div class="image"></div>
+                        <div class="overlay">
+                            <p>June 2023</p>
+                            <h1>Lulini Dev</h1>
+                            <p>Website & Design</p>
+                            <a href="./works/lulinidev.html"><button>See More</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="contact" id="contact">
+        <form data-aos="zoom-in" data-aos-duration="1000" action="https://formsubmit.co/554f7872c24dc908c565e5b7169c87ed" method="POST">
+
+            <input type="text" name="_honey" style="display: none;">
+            <input type="hidden" name="_captcha" value="false">
+
+            <div class="left-form">
+                <p>CONTACT</p>
+                <h1>Got A Problem To Solve?</h1>
+            </div>
+            <div class="right-form">
+                <div class="input-sections">
+                    <label for="name">Name</label>
+                    <input type="text" name="Name" id="name" required>
+                </div>
+                <div class="input-sections">
+                    <label for="email">Email</label>
+                    <input type="email" name="Email" id="email" required>
+                </div>
+                <div class="input-sections">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="Message" required></textarea>
+                </div>
+                <div class="input-sections btn-sec">
+                    <label id="bt">Button</label>
+                    <button type="submit">Send Message</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <footer>
+        <div class="top-footer">
+            <a href="#">Lulini Web Develoment</a>
+        </div>
+        <div class="hr">
+            <hr>
+        </div>
+        <div class="middle-footer">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="https://github.com/Cxvarisorka/Portofilo" target="_blank">Source Code</a></li>
+            </ul>
+        </div>
+        <div class="hr">
+            <hr>
+        </div>
+        <div class="bottom-footer">
+            <div class="socials">
+                <a href="http://discordapp.com/users/862050767397847060" target="_blank"><i class="fa-brands fa-discord"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100088419544165" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://github.com/Cxvarisorka" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.youtube.com/@LuliniTransport" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

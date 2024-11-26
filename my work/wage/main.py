@@ -1,7 +1,7 @@
-speed_1 = 6
-speed_2 = 21
-speed_3 = 3
-wage = 420
+speed_1 = 2
+speed_2 = 24
+speed_3 = 4
+wage = 455
 speed_count = speed_1*1 + speed_2*2 + speed_3*3
 if speed_count <= 20: wage_per_speed = 6.75
 elif speed_count <= 25: wage_per_speed = 7

@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap');
+
+.app {
+  font-family: "Teko", sans-serif;
+  color: #333;
+  text-align: center;
+}
+
+.section {
+  padding: 4rem 0;
+}
+
+.section__title {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.section__description {
+  font-size: 1rem;
+  margin: 1rem 0;
+}
+
+.button {
+  background-color: #000000;
+  color: #fff;
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #272727;
+}
+
+.built {
+  padding: 4rem 2rem;
+  background-color: #f9f9f9;
+}
+
+.built__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.built__text {
+  flex: 2;
+  text-align: left; 
+}
+
+.built__image {
+  flex: 1;
+  margin-right: 50rem;
+}
+
+.built__image img {
+  width: 100%;
+  max-width: 400px; 
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.built__title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.built__items {
+  display: flex;
+  flex-direction: column;
+}
+
+.built__item {
+  margin-bottom: 1.5rem;
+}
+
+.built__item h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.built__item p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem 0;
+}
+
+.stat-item {
+  width: 30%;
+}
+
+.stat__title {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.stat__description {
+  font-size: 1rem;
+  color: #555;
+}
+
+.splits {
+  margin-top: 3rem;
+}
+
+.splits__title {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.splits__chart img {
+  width: 100%;
+}
+
+.stats-overview {
+  display: flex;
+  justify-content: space-around;
+  padding: 3rem 0;
+}
+
+.stat-card {
+  background-color: #000000;
+  color: #fff;
+  padding: 2rem;
+  border-radius: 5px;
+  width: 25%;
+}
+
+.stat-card__value {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.stat-card__label {
+  font-size: 1rem;
+  color: #ddd;
+}
+
+.footer {
+  background-color: #f1f1f1;
+  padding: 2rem 0;
+}
+
+.footer__link {
+  color: #ff5f57;
+  text-decoration: none;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.footer__link:hover {
+  text-decoration: underline;
+}
